@@ -1,8 +1,8 @@
 Job Description:
 
 The primary purpose of the Mobile Computing team is to drive business enablement via the mobile platform.  Our customers encompass all of the global, Firmwide users.  Our technology stack includes but not limited to Linux and Windows systems, DBs, web technologies, VPN, Perl, Java, iOS, and Android. You will partner with our Mobile Engineering team and external vendors to implement and support mobile infrastructure and applications (iOS, Blackberry, Android) in order to take us to the next generation of Enterprise Mobility Management. We are willing to train you on the Mobile Device Management platform, but we require you to be a dynamic, seasoned IT professional, with experience in a large-scale enterprise with demanding users. You will have the opportunity to gain experience in extensive mobile computing technologies along with the chance to engage and support the business users. 
-Primary Responsibilities:
 
+Primary Responsibilities:
 - Evaluation, creation and implementation of automation and operational efficiencies
 - Testing, deployment, and serving as final support layer for all Mobile products
 - Optimization and handoff of work to level 2 offshore resources

@@ -41,14 +41,16 @@ MobileIron Docs@Work works with all CMS systems that support IIS and Apache base
 
 The current version of Docs@Work does not support document editing.
 
-<b>What is AppConnect?
+<b>What is AppConnect?</b>
+
 MobileIron AppConnect creates a secure app container through either an SDK and wrapper for iOS or a wrapper for Android. This container is connected to other secure app containers and to the MobileIron console for ongoing management. Security features provided by the AppConnect platform include data-at-rest encryption, SSO, DLP controls, dynamic configuration/ policy updates and selective wipe of app-specific data.
 
 <b>What kind of apps does AppConnect work with? HTML5, etc.</b>
 
 AppConnect can secure both in-house and 3rd party applications. Apps can be made AppConnect enabled through either an SDK and wrapper for iOS or a wrapper for Android. Security for HTML5 app is provided by the AppConnect enabled Web@Work secure browser.
 
-<b>Does an app developer need to do anything different to enable the app to be AppConnect ready?
+<b>Does an app developer need to do anything different to enable the app to be AppConnect ready?</b>
+
 Mobile Apps can be made AppConnect enabled by either using the AppConnect SDK or wrapper for iOS and the AppConnect wrapper for Android.
 
 <b>What is Web@Work?</b>
@@ -85,7 +87,7 @@ The agent also can check the device and analyze its current state, monitoring fo
 An enterprise app store is similar to other app stores, but tailor-made to the needs of a corporation by providing a centralized location for business applications. These applications can be ones that are already readily available in other app stores, or ones that have been created by the enterprise for internal use.
 When the enterprise app store is on a registered device and tied to a specific user, not only can the user discover applications easily, but they can also be notified of the apps that are appropriate while keeping inappropriate ones from the user.
 
-What is the Trust/Verify Model?</b>
+<b>What is the Trust/Verify Model?</b>
 
 Lockdown security models fail in mobile because they damage the user experience. MobileIron introduces a less autocratic and more sustainable model of security: IT sets the central policy and then monitors devices for compliance. When a device falls out of compliance, IT can take several remediation actions including notifying the user, blocking access to the enterprise, or wiping the mobile device.
 
@@ -143,7 +145,7 @@ MobileIron and its partners offers a variety of professional services for guided
 
 Customers can use Atlas, Mobile Iron’s advanced management and reporting tool for delegated admin features.
 
-Do you replace BES?</b>
+<b>Do you replace BES?</b>
 
 No. The MobileIron solution is complementary to BES (BlackBerry Enterprise Server), providing additional features such as real-time telecom expense monitoring.
 

@@ -4,7 +4,8 @@ MobileIron MDM Interview Questions & Answers
 
 
 
-What is the Virtual Smartphone Platform (VSP)?
+<b>What is the Virtual Smartphone Platform (VSP)?</b>
+
 The MobileIron Virtual Smartphone Platform ("VSP") is the central hub of the MobileIron solution. It may be deployed as a physical hardware appliance or as a virtual appliance using VMware ESX or Hyper-V. The VSP interfaces with the MobileIron application and enterprise resources such as LDAP, Exchange ActiveSync, certificate authorities.
 
 How many devices can you support on one VSP?

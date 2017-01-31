@@ -3,6 +3,7 @@
 <b>What are the difference between DDL, DML and DCL commands?</b>
 
 DDL
+
 <b>Data Definition Language (DDL) statements are used to define the database structure or schema. Some examples:</b>
 
     CREATE - to create objects in the database

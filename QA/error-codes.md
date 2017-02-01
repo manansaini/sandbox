@@ -7,3 +7,5 @@ HTTP Status Code is returned when an HTTP request is made to the server. The ser
     Server Error – 5XX
  
  ![](sandbox/images/HTTP-Status-Code.png)
+ 
+![](https://geekflare.com/wp-content/uploads/2015/02/HTTP-Status-Code.png)

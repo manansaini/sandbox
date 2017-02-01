@@ -28,7 +28,7 @@ netstat -anlp | grep portnumber
 
 AIX : # netstat -Aan | grep portnumber  (This will display address of Protocol Control Block in hexdecimal)
 
-Once you have hexdecimal then can execute below to get wich process is holding port number.
+Once you have hexdecimal then can execute below to get which process is holding port number.
 
 rmsock $address_of_pcb tcpcb
 

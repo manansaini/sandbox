@@ -18,9 +18,11 @@ service httpd start
 <b>2. What is the default port for HTTP and HTTPS?</b>
 
 The default port for HTTP is 80 and HTTPS 443. Checkout default ports for other applications listed here.
+
 <b>3. Can you tell me the important configuration file name?</b>
 
 httpd.conf is the main configuration file used in Apache.
+
 <b>4. How to check the version of running Apache Web Server?</b>
 
 There is multiple ways to find this but more accurately would be;
@@ -87,6 +89,7 @@ User apache
 Group apache
 
 Above configuration example will ensure it starts with “apache” user. You must ensure user exist on the server before configuring it.
+
 <b>9. How do I disable directory indexing?</b>
 
 You can use “Options -Indexes” in respective directory directive.
@@ -135,12 +138,15 @@ To create new CSR with private key
 openssl req -out geekflare.csr -newkey rsa:2048 -nodes -keyout geekflare.key
 
 Check out OpenSSL cheat sheet for more commands.
+
 <b>15. What is Virtual Hosting?</b>
 
 Virtual Hosting in Apache allows you to host multiple websites on a single instance. You can either create IP based or Name based in virtual hosting.
+
 <b>16. What module is needed to connect to WebSphere?</b>
 
 mod_was_ap22_http.so must be added in httpd.conf file to integrate with IBM WAS.
+
 <b>17. How to put Log level in Debug mode?</b>
 
 Often needed when you are troubleshooting the issue and wish to capture more details. You can change the logging level to debug by ensuring the following in httpd.conf file.
@@ -152,9 +158,11 @@ LogLevel debug
 The mod_ssl module must be uncommented prior to SSL implementation.
 
 LoadModule auth_basic_module modules/mod_ssl.so
+
 <b>19. What’s the WebLogic module name?</b>
 
 mod_wl_22.so
+
 <b>20. What are the log level available in Apache?</b>
 
 The default configuration is set to “warn” however, the following is possible too.
@@ -177,14 +185,17 @@ Default DocumentRoot location is /var/www/html
 <b>22. How to deploy war or JAVA applications in Apache?</b>
 
 I am afraid, Apache is a Web Server and Java based application deployment is not possible with it. However, you can integrate Java application server like WebLogic, WebSphere, JBoss where you can deploy war, ear files.
+
 <b>23. What’s difference between Apache Web Server and Apache Tomcat?</b>
 
 Apache Web is HTTP server to serve static contents where Tomcat is servlet container to deploy JSP files.
 
 You can always integrate Apache HTTP with Tomcat, however, based on the requirement you need to choose either one. If you need proper web server then Apache HTTP else Tomcat for JSP-Servlet Container.
+
 <b>24. How can Apache act a Proxy Server?</b>
 
 You can use a mod_proxy module to use as a proxy server. The mod_proxy module can be used to connect to the backend server like Tomcat, WebLogic, WebSphere, etc.
+
 <b>25. How to configure Apache log so it captures time taken to serve a request?</b>
 
 You can add “%D” in httpd.conf file under LogFormat directive to capture the response time taken to serve the request. It will show time in microseconds.
@@ -200,6 +211,7 @@ Restart the apache web server and you can see the results.
 <b>26. What tool do you use for log analysis?</b>
 
 You got to speak the truth but to given you an idea you can use GoAccess, SumoLogic or few mentioned here.
+
 <b>27. What are the Web Servers you’ve worked on along with Apache?</b>
 
 Again, you better tell the truth but to make you aware there are many web servers in the market including the following.
@@ -226,9 +238,11 @@ Syntax OK
 <b>29. How to perform Apache performance benchmark?</b>
 
 You can use a tool like ApacheBench, SIEGE to perform the load test on web servers including Apache. Another option to perform stress test online to see the overall how web application performs under load.
+
 <b>30. How to get support for Apache Web Server if something wrong?</b>
 
 Apache is an Open Source web server so there is no enterprise level support however, you can raise a bug report or ask a question on Stack Overflow.
+
 <b>31. How to ensure web server is getting started after server reboot?</b>
 
 If running Linux, then you can put a script in /etc/init.d/ and enable to start on boot using chkconfig command
@@ -240,6 +254,7 @@ chkconfig --add apache
 chkconfig apache on
 
 if on Windows, then ensure startup type is selected “Automatic”
+
 <b>32. what is a difference between Apache and Nginx web server?</b>
 
 Both are categorized as a Web Server and here are some of the main differences.
@@ -265,6 +280,7 @@ if normal kill doesn’t work then try kill -9
 kill -9 $PIDNUMBER
 
 if on Windows, then end the apache task from Task Manager.
+
 <b>34. How to find httpd.conf file if you don’t know installation location?</b>
 
 In Linux, you can use find command.
@@ -287,6 +303,7 @@ find / -name httpd.conf
 You can explain based on your experience, however, typically for Internet-facing applications it would be in Internet DMZ network and for intranet, core network.
 
 But again this will differ based on application/organization.
+
 <b>37. How to hide server version details in HTTP response header?</b>
 
 Add the following in httpd.conf file and restart the web server
@@ -295,6 +312,7 @@ ServerTokens Prod
 ServerSignature Off
 
 This will hide the version and show Server as “Apache” Only.
+
 <b>38. What does 200, 403 & 503 HTTP error code mean?</b>
 
     200 – content found and served OK

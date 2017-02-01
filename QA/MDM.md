@@ -1,6 +1,4 @@
- Mobile Device Management (MDM) Interview Questions & Answers
-
-MobileIron MDM Interview Questions & Answers
+# MobileIron MDM Interview Questions & Answers
 
 
 

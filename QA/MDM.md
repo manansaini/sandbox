@@ -1,4 +1,4 @@
-# MobileIron MDM Interview Questions & Answers
+# MobileIron MDM 
 
 
 

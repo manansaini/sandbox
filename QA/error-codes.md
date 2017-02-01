@@ -6,6 +6,10 @@ HTTP Status Code is returned when an HTTP request is made to the server. The ser
     Client Error – 4XX
     Server Error – 5XX
  
-![test](https://github.com/manansaini/sandbox/images/HTTP-Status-Code.png)
+ Let’s take a look at below diagram, which gives an idea how a status code is returned from the web server.
  
-![te](https://geekflare.com/wp-content/uploads/2015/02/HTTP-Status-Code.png)
+![](https://geekflare.com/wp-content/uploads/2015/02/http-status-return.png)
+
+So now you have an idea how the status code is generated and here are some of the popular HTTP status return code in Infographics.
+
+![HTTP Error Codes](https://geekflare.com/wp-content/uploads/2015/02/HTTP-Status-Code.png)

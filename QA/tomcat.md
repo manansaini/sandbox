@@ -1,14 +1,14 @@
-1) Explain what is Jasper?
+<b>1) Explain what is Jasper?</b>
 
     Jasper is a Tomcat’s JSP engine
     It parses JSP files to compile them into JAVA code as servlets
     At runtime, Jasper allows to automatically detect JSP file changes and recompile them
 
-2) Mention what is the output of select * from tab?
+<b>2) Mention what is the output of select * from tab?</b>
 
 It displays the default tables in the database
 
-3) Explain how you can configure Tomcat to work with IIS and NTLM?
+<b>3) Explain how you can configure Tomcat to work with IIS and NTLM?</b>
 
 You have to follow the standard instructions for when the isapi_redirector.dll
 
@@ -18,7 +18,7 @@ Ensure that in the server.xml you have disable tomcat authentication
 
 <Connector port = “8009” enableLooksup = “false” redirect port = “8443” protocol = “AJP/1.3” tomcatAuthentication = “false” />
 
-4) Explain when you can use . and when you can use []?
+<b>4) Explain when you can use . and when you can use []?</b>
 
 If you are running a bean property, use the .operator, and if you are executing a map value or an array index, it is preferred to use the [] operator. Although you can use these operators interchangeably.
 

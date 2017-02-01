@@ -6,6 +6,6 @@ HTTP Status Code is returned when an HTTP request is made to the server. The ser
     Client Error – 4XX
     Server Error – 5XX
  
-![](https://github.com/manansaini/sandbox/images/HTTP-Status-Code.png)
+![test](https://github.com/manansaini/sandbox/images/HTTP-Status-Code.png)
  
-![](https://geekflare.com/wp-content/uploads/2015/02/HTTP-Status-Code.png)
+![te](https://geekflare.com/wp-content/uploads/2015/02/HTTP-Status-Code.png)

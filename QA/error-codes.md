@@ -5,4 +5,4 @@ HTTP Status Code is returned when an HTTP request is made to the server. The ser
     Redirection – 3XX
     Client Error – 4XX
     Server Error – 5XX
- ![](sandbox/images/HTTP-Status-Code.png)
+ [[sandbox/images/HTTP-Status-Code.png]]

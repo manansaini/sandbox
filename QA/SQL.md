@@ -1,5 +1,5 @@
 
-
+# SQL 
 <b>What are the difference between DDL, DML and DCL commands?</b>
 
 DDL

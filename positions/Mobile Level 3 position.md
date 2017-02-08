@@ -28,3 +28,9 @@ Skills Desired:
 - Basic understanding of network/distributed file systems (NFS, AFS, DFS)
 - Strong knowledge of TCP/IP
 - Web infrastructure support (Apache/Tomcat preferred)
+
+
+Intro:
+
+I am in Webops L2 team, In past I worked with DeployOps as well which is Doug Moses team. While working in DeployOps and WebOps I get to work on various technologies like IIS server, Apache server, Websphere servers, NFS/AFS, TCP/IP, scripting, windeploy tool and webfarm plus tools, load balancers, various application support, participate in troubleshooting and resolving infrastructure faults and outages on Linux and Windows servers. Being a tech lead I also create, maintain and update technical documentation and train other team members.
+

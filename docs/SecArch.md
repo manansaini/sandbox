@@ -18,3 +18,7 @@
   
   Accounting: refers to the record-keeping and tracking of user activities on a computer network. 
   
+Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
+
+
+

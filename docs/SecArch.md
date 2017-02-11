@@ -10,7 +10,7 @@
   
   Security Assessment and Authorization (SA&A) is the process by which federal agencies examine their information technology infrastructure and develop supporting evidence necessary for security assurance accreditation.
   
-  # AAA:
+# AAA:
   
   Authentication: refers to unique identifying information from each system user, generally in the form of a username and password.
   

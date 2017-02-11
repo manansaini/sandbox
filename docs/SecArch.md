@@ -12,6 +12,8 @@
   
   # AAA
   Authentication: refers to unique identifying information from each system user, generally in the form of a username and password.
+  
   Authorization: refers to the process of adding or denying individual user access to a computer network and its resources.
+  
   Accounting: refers to the record-keeping and tracking of user activities on a computer network. 
   

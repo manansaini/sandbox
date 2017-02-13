@@ -67,7 +67,10 @@ COBIT 5 is based on five key principles for governance and management of enterpr
 
 The most common SAML flow is shown below:
 
-!(https://d9s067m9cf0lb.cloudfront.net/assets/2013/04/09/saml2-flow-c21af65008358283906cf90aec68c18fb9b8da17704d1f10f3ced6d8c8fa4cc2.png)
+
+![SAML flow](https://d9s067m9cf0lb.cloudfront.net/assets/2013/04/09/saml2-flow-c21af65008358283906cf90aec68c18fb9b8da17704d1f10f3ced6d8c8fa4cc2.png)
+
+![](https://geekflare.com/wp-content/uploads/2015/02/http-status-return.png)
 
 # OAuth
 

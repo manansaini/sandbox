@@ -14,7 +14,7 @@
   
 #  SA&A Process:
   
-  Security Assessment and Authorization (SA&A) is the process by which federal agencies examine their information technology infrastructure and develop supporting evidence necessary for security assurance accreditation.
+Security Assessment and Authorization (SA&A) is the process by which agencies examine their information technology infrastructure and develop supporting evidence necessary for security assurance accreditation.
   
 # AAA:
   

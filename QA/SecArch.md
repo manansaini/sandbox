@@ -70,10 +70,47 @@ The most common SAML flow is shown below:
 
 ![SAML flow](https://d9s067m9cf0lb.cloudfront.net/assets/2013/04/09/saml2-flow-c21af65008358283906cf90aec68c18fb9b8da17704d1f10f3ced6d8c8fa4cc2.png)
 
-![](https://geekflare.com/wp-content/uploads/2015/02/http-status-return.png)
+Here's a fictitious scenario describing the above diagram:
+
+    A - a user opens their web-browser and goes to MyPhotos.com which stores all of their photos. MyPhotos.com doesn't handle authentication itself.
+
+    B - to authenticate the user MyPhotos.com constructs a SAML Authnrequest, signs it, optionally encrypts it, and encodes it. After which, it redirects the user's web browser to the Identidy Provider (IdP) in order to authenticate. The IdP receives the request, decodes it, decrypts it if necessary, and verifies the signature.
+
+    C - With a valid Authnrequest the IdP will present the user with a login form in which they can enter their username and password.
+
+    D- Once the user has logged in, the IdP generates a SAML token that includes identity information about the user (such as their username, email, etc). The Id takes the SAML token and redirects the user back to the Service Provider (MyPhotos.com).
+
+    E - MyPhotos.com verifies the SAML token, decrypts it if necessary, and extracts out identity information about the user, such as who they are and what their permissions might be. MyPhotos.com now logs the user into its system, presumably with some kind of cookie and session.
+
 
 # OAuth
 
+
+
+    Resource Server (Service Provider) - this is the web-server you are trying to access information on.
+
+    Client - this is how the user is interacting with the Resource Server. This could be a browser-based web app, a native mobile app, a desktop app, a server-side app.
+
+    Authorization Server (Identity Provider) - this is the server that owns the user identities and credentials. It's who the user actually authenticates and authorizes with.
+
+At a high level, the OAuth2 flow is not that different from the earlier SAML flow:
+
+![OAuth flow](https://d9s067m9cf0lb.cloudfront.net/assets/2013/04/09/oauth2-flow-4da2c3e38ecf5a77b38607d527c320bda93714ce2d6163e122aabb534390df43.png)
+
+
+Let's walk through the same scenario we walked through with SAML earlier:
+
+    A - a user opens their web-browser and goes to MyPhotos.com which stores all of their photos. MyPhotos.com doesn't handle authentication itself, so the user is redirected to the Authorization Server with a request for authorization. The user is presented with a login form and is asked if they want to approve the Resource Server (MyPhotos.com) to act on their behalf. The user logs in and they are redirected back to MyPhotos.com.
+
+    B - the client receives an authorization grant code as a part of the redirect and then passes this along to the client.
+
+    C - the Client then uses that authorization grant code to request an access token from the Authorization Server.
+
+    D - if the authorization grant code is valid, then the Authorization Server grants an access token. The access token is then used by the client to request resources from the Resource Server (MyPhotos.com).
+
+    E - MyPhotos.com receives the request for a resource and it receives the access token. In order to make sure it's a valid access token it sends the token directly to the Authorization Server to validate. If valid, the Authorization Server sends back information about the user.
+
+    F - having validated the user's request MyPhotos.com sends the requested resource back to the user.
 
 
 

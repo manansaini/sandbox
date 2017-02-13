@@ -1,11 +1,14 @@
 # CIA Triad:
   C: Confidientiality :Confidentiality is the ability to hide information from those people unauthorised to view it.
+  
     Compromise: Steal user session info form the session cookies, injection attacks (SQL, URI, Log, LDAP etc)
   
   I: Integrity: The ability to ensure that data is an accurate and unchanged representation of the original secure information.
+  
     Compromise: Attacker can corrupt or destroy the data using URI ,SQL ,log injection attacks
   
   A: Availbility: It is important to ensure that the information concerned is readily accessible to the authorised viewer at all times.. System and network must be up and running.
+  
     Compromise: Can be impacted via DoS attack.
   
   
@@ -26,6 +29,37 @@
 XSS is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
 
 # ISO 27001
+
+ISO 27001 (formally known as ISO/IEC 27001:2005) is a specification for an information security management system (ISMS). An ISMS is a framework of policies and procedures that includes all legal, physical and technical controls involved in an organisation's information risk management processes.
+
+ISO 27001 uses a topdown, risk-based approach and is technology-neutral. The specification defines a six-part planning process:
+
+    Define a security policy.
+    Define the scope of the ISMS.
+    Conduct a risk assessment.
+    Manage identified risks.
+    Select control objectives and controls to be implemented.
+    Prepare a statement of applicability.
+
+# CoBIT
+COBIT  is a framework for developing, implementing, monitoring and improving information technology (IT) governance and management practices.The goal of the framework is to provide a common language for business executives to communicate with each other about goals, objectives and results.
+
+The name COBIT originally stood for "Control Objectives for Information and Related Technology," but the spelled-out version of the name was dropped in favor of the acronym in the fifth iteration of the framework.
+
+COBIT 5 is based on five key principles for governance and management of enterprise IT:
+
+   Principle 1: Meeting Stakeholder Needs
+   Principle 2: Covering the Enterprise End-to-End
+   Principle 3: Applying a Single, Integrated Framework
+   Principle 4: Enabling a Holistic Approach
+   Principle 5: Separating Governance From Management
+    
+
+# SAML
+
+
+
+# OAuth
 
 
 

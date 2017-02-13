@@ -59,6 +59,16 @@ COBIT 5 is based on five key principles for governance and management of enterpr
 
 
 
+    Service Provider (Resource Server) - this is the web-server you are trying to access information on.
+
+    Client - this is how the user is interacting with the Resource Server, like a web app being served through a web browser.
+
+    Identity Provider (Authorization Server) - this is the server that owns the user identities and credentials. It's who the user actually authenticates with.
+
+The most common SAML flow is shown below:
+
+!(https://d9s067m9cf0lb.cloudfront.net/assets/2013/04/09/saml2-flow-c21af65008358283906cf90aec68c18fb9b8da17704d1f10f3ced6d8c8fa4cc2.png)
+
 # OAuth
 
 

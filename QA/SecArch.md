@@ -180,7 +180,38 @@ An application vulnerability is a system flaw or weakness in an application that
   The vulnerability lies in the affected web application, not the victim’s browser or the site hosting the CSRF.
   The most common method to prevent Cross-Site Request Forgery (CSRF) attacks is to append unpredictable challenge tokens to each request and associate them with the user’s session. Such tokens should at a minimum be unique per user session, but can also be unique per request. By including a challenge token with each request, the developer can ensure that the request is valid and not coming from a source other than the user.
   
+* Cross-Site Scripting (XSS) : XSS is one of the most common application-layer web attacks. XSS vulnerabilities target scripts embedded in a page that are executed on the client-side (in the user’s web browser) rather than on the server-side.
+  
+  In XSS attacks, the victim is the user and not the application. XSS vulnerabilities may occur if:
 
+    Input coming into web applications is not validated
+    Output to the browser is not HTML encoded
+
+* Failure to Restrict URL Access: If your application fails to appropriately restrict URL access, security can be compromised through a technique called forced browsing. Forced browsing can be a very serious problem if an attacker tries to gather sensitive data through a web browser by requesting specific pages, or data files. Using this technique, an attacker can bypass website security by accessing files directly instead of following links. This enables the attacker to access data source files directly instead of using the web application. The attacker can then guess the names of backup files that contain sensitive information, locate and read source code, or other information left on the server, and bypass the "order" of web pages.
+  
+  To prevent forced browsing, you can use appropriate permissions or ACLs to disallow anonymous reading. Also, do not allow anonymous web visitors user read permissions to any sensitive data files.
+
+  Secondly, define the list of file types available for remote reading on the server. Many servers allow you to define which file extensions can be served remotely. For example, .log, .dat and database files are not files that all users should have access to - except through secure channels.
+
+  Also, remove all unnecessary files from web-accessible directories. That is, if files are unneeded within the directory, remove them, even though they may be secure. ACLs may need to change in the future, and this could pose a security risk.
+
+
+* LDAP Injection: LDAP Injection is an attack used to exploit web-based applications that construct LDAP statements based on user input. When an application fails to properly sanitize user input, it’s possible to modify LDAP statements using a local proxy. This could result in the execution of arbitrary commands, such as granting permissions to unauthorized queries, and content modification inside the LDAP tree. 
+
+  Incoming Data Validation - All client-supplied data needs to be cleaned of any characters or strings that could possibly be used maliciously.
+  
+  Outgoing Data Validation - All data returned to the user should be validated, and the amount of data returned by the queries should be restricted as an added layer of security.
+  
+  LDAP Configuration - Implementing tight access control on the data in the LDAP directory is imperative, especially when configuring the permissions on user objects, and even more importantly if the directory is used for single sign-on solution. 
+  
+* SQL Injection: SQL injection (SQLi) is an application security weakness that allows attackers to control an application’s database – letting them access or delete data, change an application’s data-driven behavior, and do other undesirable things – by tricking the application into sending unexpected SQL commands.
+
+  Discover SQLi vulnerabilities by routinely testing your applications both using static testing and dynamic testing.
+  
+  Avoid and repair SQLi vulnerabilities by using parameterized queries. These types of queries specify placeholders for parameters so that the database will always treat them as data rather than part of a SQL command. 
+  
+  Mitigate the impact of SQLi vulnerabilities by enforcing least privilege on the database. Ensure that each application has its own database credentials, and that these credentials have the minimum rights the application needs.
+  
  
 ### 
  

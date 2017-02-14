@@ -1,4 +1,4 @@
-#### CIA Triad:
+### CIA Triad:
   C: Confidientiality :Confidentiality is the ability to hide information from those people unauthorised to view it.
   
     Compromise: Steal user session info form the session cookies, injection attacks (SQL, URI, Log, LDAP etc)

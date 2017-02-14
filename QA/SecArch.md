@@ -15,6 +15,10 @@
 #  SA&A Process:
   
 Security Assessment and Authorization (SA&A) is the process by which agencies examine their information technology infrastructure and develop supporting evidence necessary for security assurance accreditation.
+
+The National Institute of Standards and Technology (NIST) Risk Management Framework (Special Publication 800-37) has created a new model for risk analysis for federal agencies by moving from the traditional Certification & Accreditation (C&A) approach to a Security Assessment & Authorization (SA&A) model – a more real-time, dynamic view of risk.
+
+
   
 # AAA:
   
@@ -112,6 +116,42 @@ Let's walk through the same scenario we walked through with SAML earlier:
 
     F - having validated the user's request MyPhotos.com sends the requested resource back to the user.
 
+ 
+ # What is the difference between a threat, vulnerability, and a risk?
+ 
+ Asset – People, property, and information. An asset is what we’re trying to protect.
+ 
+ Threat – Anything that can exploit a vulnerability, intentionally or accidentally, and obtain, damage, or destroy an asset.
+ 
+ Vulnerability – Weaknesses or gaps in a security program that can be exploited by threats to gain unauthorized access to an asset.
+ 
+ Risk – The potential for loss, damage or destruction of an asset as a result of a threat exploiting a vulnerability.
+ 
+ Asset + Threat + Vulnerability = Risk.
+ 
+ 
+ # What port does ping work over?
+ 
+ Ping uses the ICMP ECHO facilities in Layer 3. Real ping uses ICMP, which doesn't use ports at all. ICMP Works At Layer Three (3) While ICMP sits “on top of”, i.e. is embedded in, IP , ICMP is not a layer 4 protocol.
+ 
+ # What’s the difference between encoding, encryption, and hashing?
+ 
+Encoding: The purpose of encoding is to transform data so that it can be properly (and safely) consumed by a different type of system, e.g. binary data being sent over email, or viewing special characters on a web page. The goal is not to keep information secret, but rather to ensure that it’s able to be properly consumed.
+ 
+Encryption: The purpose of encryption is to transform data in order to keep it secret from others, e.g. sending someone a secret letter that only they should be able to read, or securely sending a password over the Internet. Examples: AES, Blowfish, RSA
+ 
+Hashing: Hashing serves the purpose of ensuring integrity, i.e. making it so that if something is changed you can know that it’s changed. Technically, hashing takes arbitrary input and produce a fixed-length string that has the following attributes:
+
+    The same input will always produce the same output.
+    Multiple disparate inputs should not produce the same output.
+    It should not be possible to go from the output to the input.
+    Any modification of a given input should result in drastic change to the hash.
+    
+
+
+ 
+ 
+ 
 
 
 

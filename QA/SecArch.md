@@ -131,14 +131,13 @@ Let's walk through the same scenario we walked through with SAML earlier:
  Asset + Threat + Vulnerability = Risk.
  
  
- # What port does ping work over?
+# What port does ping work over?
+ 
+Ping uses the ICMP ECHO facilities in Layer 3. Real ping uses ICMP, which doesn't use ports at all. ICMP Works At Layer Three (3) While ICMP sits “on top of”, i.e. is embedded in, IP , ICMP is not a layer 4 protocol.
  
  
- Ping uses the ICMP ECHO facilities in Layer 3. Real ping uses ICMP, which doesn't use ports at all. ICMP Works At Layer Three (3) While ICMP sits “on top of”, i.e. is embedded in, IP , ICMP is not a layer 4 protocol.
- 
- # What’s the difference between encoding, encryption, and hashing?
- 
- 
+# What’s the difference between encoding, encryption, and hashing?
+
 Encoding: The purpose of encoding is to transform data so that it can be properly (and safely) consumed by a different type of system, e.g. binary data being sent over email, or viewing special characters on a web page. The goal is not to keep information secret, but rather to ensure that it’s able to be properly consumed.
  
 Encryption: The purpose of encryption is to transform data in order to keep it secret from others, e.g. sending someone a secret letter that only they should be able to read, or securely sending a password over the Internet. Examples: AES, Blowfish, RSA
@@ -153,7 +152,6 @@ Hashing: Hashing serves the purpose of ensuring integrity, i.e. making it so tha
 Examples: SHA-3, MD5 (Now obsolete), etc.
 
 # How are PCI compliance levels determined for each business?
-
 
 PCI compliance level is determined by the number or volume of credit card transactions accumulated by a vendor.
 There are four levels of PCI compliance. The first level is any merchant that uses credit card transactions for purchases, and the final fourth level are high volume merchants that take over a million transactions a year.

@@ -1,3 +1,4 @@
+# Security Arch Analyst
 ### CIA Triad:
   C: Confidientiality :Confidentiality is the ability to hide information from those people unauthorised to view it.
   
@@ -12,7 +13,7 @@
     Compromise: Can be impacted via DoS attack.
   
   
-#  SA&A Process:
+###  SA&A Process:
   
 Security Assessment and Authorization (SA&A) is the process by which agencies examine their information technology infrastructure and develop supporting evidence necessary for security assurance accreditation.
 
@@ -20,7 +21,7 @@ The National Institute of Standards and Technology (NIST) Risk Management Framew
 
 
   
-# AAA:
+### AAA:
   
   Authentication: refers to unique identifying information from each system user, generally in the form of a username and password.
   
@@ -28,11 +29,11 @@ The National Institute of Standards and Technology (NIST) Risk Management Framew
   
   Accounting: refers to the record-keeping and tracking of user activities on a computer network. 
   
-# Cross-site scripting (XSS)
+### Cross-site scripting (XSS)
 
 XSS is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
 
-# ISO 27001
+### ISO 27001
 
 ISO 27001 (formally known as ISO/IEC 27001:2005) is a specification for an information security management system (ISMS). An ISMS is a framework of policies and procedures that includes all legal, physical and technical controls involved in an organisation's information risk management processes.
 
@@ -45,7 +46,7 @@ ISO 27001 uses a topdown, risk-based approach and is technology-neutral. The spe
     Select control objectives and controls to be implemented.
     Prepare a statement of applicability.
 
-# CoBIT
+### CoBIT
 COBIT  is a framework for developing, implementing, monitoring and improving information technology (IT) governance and management practices.The goal of the framework is to provide a common language for business executives to communicate with each other about goals, objectives and results.
 
 The name COBIT originally stood for "Control Objectives for Information and Related Technology," but the spelled-out version of the name was dropped in favor of the acronym in the fifth iteration of the framework.
@@ -59,7 +60,7 @@ COBIT 5 is based on five key principles for governance and management of enterpr
    Principle 5: Separating Governance From Management
     
 
-# SAML
+### SAML
 
 
 
@@ -87,7 +88,7 @@ Here's a fictitious scenario describing the above diagram:
     E - MyPhotos.com verifies the SAML token, decrypts it if necessary, and extracts out identity information about the user, such as who they are and what their permissions might be. MyPhotos.com now logs the user into its system, presumably with some kind of cookie and session.
 
 
-# OAuth
+### OAuth
 
 
 
@@ -117,7 +118,7 @@ Let's walk through the same scenario we walked through with SAML earlier:
     F - having validated the user's request MyPhotos.com sends the requested resource back to the user.
 
  
- # What is the difference between a threat, vulnerability, and a risk?
+ ### What is the difference between a threat, vulnerability, and a risk?
  
  
  Asset – People, property, and information. An asset is what we’re trying to protect.
@@ -131,12 +132,12 @@ Let's walk through the same scenario we walked through with SAML earlier:
  Asset + Threat + Vulnerability = Risk.
  
  
-# What port does ping work over?
+### What port does ping work over?
  
 Ping uses the ICMP ECHO facilities in Layer 3. Real ping uses ICMP, which doesn't use ports at all. ICMP Works At Layer Three (3) While ICMP sits “on top of”, i.e. is embedded in, IP , ICMP is not a layer 4 protocol.
  
  
-# What’s the difference between encoding, encryption, and hashing?
+### What’s the difference between encoding, encryption, and hashing?
 
 Encoding: The purpose of encoding is to transform data so that it can be properly (and safely) consumed by a different type of system, e.g. binary data being sent over email, or viewing special characters on a web page. The goal is not to keep information secret, but rather to ensure that it’s able to be properly consumed.
  
@@ -151,7 +152,7 @@ Hashing: Hashing serves the purpose of ensuring integrity, i.e. making it so tha
     
 Examples: SHA-3, MD5 (Now obsolete), etc.
 
-# How are PCI compliance levels determined for each business?
+### How are PCI compliance levels determined for each business?
 
 PCI compliance level is determined by the number or volume of credit card transactions accumulated by a vendor.
 There are four levels of PCI compliance. The first level is any merchant that uses credit card transactions for purchases, and the final fourth level are high volume merchants that take over a million transactions a year.

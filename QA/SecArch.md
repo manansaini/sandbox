@@ -212,8 +212,11 @@ An application vulnerability is a system flaw or weakness in an application that
   
   Mitigate the impact of SQLi vulnerabilities by enforcing least privilege on the database. Ensure that each application has its own database credentials, and that these credentials have the minimum rights the application needs.
   
- 
-### 
+## RISK Management
+
+### Why Is It Important to Manage Risk?
+  The principle reason for managing risk in an organization is to protect the mission and assets of the organization. Therefore, risk management must be a management function rather than a technical function. The fact is that all organizations have limited resources and risk can never be reduced to zero. So, understanding risk, especially the magnitude of the risk, allows organizations to the system owner to protect the information system commensurate with its value to the organization.
+
  
 ### 
  

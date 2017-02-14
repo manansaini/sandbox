@@ -1,4 +1,9 @@
 # Security Arch Analyst
+
+### What is OWASP
+The Open Web Application Security Project (OWASP) is a non-profit organization dedicated to providing unbiased, practical information about application security. 
+
+
 ### CIA Triad:
   C: Confidientiality :Confidentiality is the ability to hide information from those people unauthorised to view it.
   
@@ -158,8 +163,37 @@ PCI compliance level is determined by the number or volume of credit card transa
 There are four levels of PCI compliance. The first level is any merchant that uses credit card transactions for purchases, and the final fourth level are high volume merchants that take over a million transactions a year.
 
 
+### Explain what is the 80/20 rule of networking?
+
+80/20 is a thumb rule used for describing IP networks, in which 80% of all traffic should remain local while 20% is routed towards a remote network.
  
+### Common Web Application Vulnerabilities
+
+An application vulnerability is a system flaw or weakness in an application that could be exploited to compromise the security of the application. Once an attacker has found a flaw, or application vulnerability, and determined how to access it, the attacker has the potential to exploit the application vulnerability to facilitate a cyber crime. 
+
+* Buffer Overflow:  A Buffer overflow is a common software coding mistake. A buffer overflow, or “buffer overrun” occurs when more data is put into a fixed-length buffer than the buffer can handle. Adjacent memory space becomes overwritten and corrupted. When this occurs – bad things happen. Usually system crashes, but also the opportunity for an attacker to run arbitrary code.
+
+      The most reliable way to avoid or prevent buffer overflows is to use automatic protection at the language level. Another fix is “bounds checking” enforced at run-time, which prevents buffer overrun by automatically checking that data written to a buffer is within acceptable boundaries. Also we should include regular testing to detect and fix buffer overflows.
+      
+* Cross-Site Request Forgery (CSRF) attack: It is an attack whereby a malicious website will send a request to a web application that a user is already authenticated against from a different website. This way an attacker can access functionality in a target web application via the victim's already authenticated browser. 
+
+  The vulnerability lies in the affected web application, not the victim’s browser or the site hosting the CSRF.
+  The most common method to prevent Cross-Site Request Forgery (CSRF) attacks is to append unpredictable challenge tokens to each request and associate them with the user’s session. Such tokens should at a minimum be unique per user session, but can also be unique per request. By including a challenge token with each request, the developer can ensure that the request is valid and not coming from a source other than the user.
+  
+
  
+### 
+ 
+### 
+ 
+### 
+ 
+### 
+ 
+### 
+ 
+### 
+
  
 
 

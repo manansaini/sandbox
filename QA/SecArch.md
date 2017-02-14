@@ -218,10 +218,41 @@ An application vulnerability is a system flaw or weakness in an application that
   The principle reason for managing risk in an organization is to protect the mission and assets of the organization. Therefore, risk management must be a management function rather than a technical function. The fact is that all organizations have limited resources and risk can never be reduced to zero. So, understanding risk, especially the magnitude of the risk, allows organizations to the system owner to protect the information system commensurate with its value to the organization.
 
  
-### 
+### How Is Risk Assessed? 
+Risk is assessed by identifying threats and vulnerabilities, then determining the likelihood and impact for each risk. Risk assessment is a complex undertaking, usually based on imperfect information. The general process of risk assessment is:
  
-### 
+* Quantitative Risk Assessment :
+  Quantitative risk assessment draws upon methodologies used by financial institutions and insurance companies. By assigning values to information, systems, business processes, recovery costs, etc., impact, and therefore risk, can be measured in terms of direct and indirect costs. 
+
+* Qualitative Risk Assessment
+  Qualitative risk assessments assume that there is already a great degree of uncertainty in the likelihood and impact values and defines them, and thus risk, in somewhat subjective or qualitative terms.Similar to the issues in quantitative risk assessment, the great difficulty in qualitative risk assessment is defining the likehood and impact values.
  
+#### Assessing Risk
+Assessing risk is the process of determining the likelihood of the threat being exercised against
+the vulnerability and the resulting impact from a successful compromise. When assessing
+likelihood and impact, take the current threat environment and controls into consideration.
+Likelihood and impact are assessed on the system as it is operating at the time of the assessment
+
+
+### How Is Risk Managed?
+
+Recall that the purpose of assessing risk is to assist management in determining where to direct resources. There are four basic strategies for managing risk: mitigation, transference, acceptance and avoidance. 
+
+* Mitigation
+Mitigation is the most commonly considered risk management strategy. Mitigation involves fixing the flaw or providing some type of compensatory control to reduce the likelihood or impact associated with the flaw. A common mitigation for a technical security flaw is to install a patch provided by the vendor. Sometimes the process of determining mitigation strategies is called control analysis. 
+
+* Transference
+Transference is the process of allowing another party to accept the risk on your behalf. This is not widely done for IT systems, but everyone does it all the time in their personal lives. Car, health and life insurance are all ways to transfer risk. In these cases, risk is transferred from the individual to a pool of insurance holders, including the insurance company.
+
+* Acceptance
+Acceptance is the practice of simply allowing the system to operate with a known risk. Many low risks are simply accepted. Risks that have an extremely high cost to mitigate are also often accepted. Beware of high risks being accepted by management. Ensure that this strategy is in writing and accepted by the manager(s) making the decision. Often risks are accepted that should not have been accepted, and then when the penetration occurs, the IT security personnel are held responsible. Typically, business managers, not IT security personnel, are the ones authorized to accept risk on behalf of an organization. 
+ 
+* Avoidance
+Avoidance is the practice of removing the vulnerable aspect of the system or even the system itself. For instance, during a risk assessment, a website was uncovered that let vendors view their invoices, using a vendor ID embedded in the HTML file name as the identification and no authentication or authorization per vendor. When notified about the web pages and the risk to the
+organization, management decided to remove the web pages and provide vendor invoices via another mechanism. In this case, the risk was avoided by removing the vulnerable web pages.
+
+
+
 ### 
  
 ### 

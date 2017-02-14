@@ -147,6 +147,8 @@ Hashing: Hashing serves the purpose of ensuring integrity, i.e. making it so tha
     It should not be possible to go from the output to the input.
     Any modification of a given input should result in drastic change to the hash.
     
+Examples: SHA-3, MD5 (Now obsolete), etc.
+
 
 
  

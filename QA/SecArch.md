@@ -4,7 +4,9 @@
 The Open Web Application Security Project (OWASP) is a non-profit organization dedicated to providing unbiased, practical information about application security. 
 
 
-### CIA Triad:
+### CIA Triad:  
+  CIA Triad is a model designed to guide policies for information security within an organization.
+  
   C: Confidientiality :Confidentiality is the ability to hide information from those people unauthorised to view it.
   
     Compromise: Steal user session info form the session cookies, injection attacks (SQL, URI, Log, LDAP etc)
@@ -67,6 +69,7 @@ COBIT 5 is based on five key principles for governance and management of enterpr
 
 ### SAML
 
+Security Assertion Markup Language (SAML, pronounced sam-el) is an XML-based, open-standard data format for exchanging authentication and authorization data between parties.
 
 
     Service Provider (Resource Server) - this is the web-server you are trying to access information on.
@@ -95,7 +98,7 @@ Here's a fictitious scenario describing the above diagram:
 
 ### OAuth
 
-
+OAuth is an open standard for authorization, commonly used as a way for Internet users to authorize websites or applications to access their information on other websites but without giving them the passwords.
 
     Resource Server (Service Provider) - this is the web-server you are trying to access information on.
 
@@ -123,12 +126,12 @@ Let's walk through the same scenario we walked through with SAML earlier:
     F - having validated the user's request MyPhotos.com sends the requested resource back to the user.
 
  
- ### What is the difference between a threat, vulnerability, and a risk?
+### What is the difference between a threat, vulnerability, and a risk?
  
  
  Asset – People, property, and information. An asset is what we’re trying to protect.
  
- Threat – Anything that can exploit a vulnerability, intentionally or accidentally, and obtain, damage, or destroy an asset.
+ Threat – Anything that can exploit a vulnerability, intentionally or accidentally, and obtain, damage, or destroy an asset. It is the potential to harm an asset.
  
  Vulnerability – Weaknesses or gaps in a security program that can be exploited by threats to gain unauthorized access to an asset.
  
@@ -180,7 +183,7 @@ An application vulnerability is a system flaw or weakness in an application that
   The vulnerability lies in the affected web application, not the victim’s browser or the site hosting the CSRF.
   The most common method to prevent Cross-Site Request Forgery (CSRF) attacks is to append unpredictable challenge tokens to each request and associate them with the user’s session. Such tokens should at a minimum be unique per user session, but can also be unique per request. By including a challenge token with each request, the developer can ensure that the request is valid and not coming from a source other than the user.
   
-* Cross-Site Scripting (XSS) : XSS is one of the most common application-layer web attacks. XSS vulnerabilities target scripts embedded in a page that are executed on the client-side (in the user’s web browser) rather than on the server-side.
+* Cross-Site Scripting (XSS) : XSS is one of the most common application-layer web attacks. XSS vulnerabilities target scripts embedded in a page that are executed on the client-side (in the user’s web browser) rather than on the server-side. A cross-site scripting vulnerability may be used by attackers to bypass access controls
   
   In XSS attacks, the victim is the user and not the application. XSS vulnerabilities may occur if:
 

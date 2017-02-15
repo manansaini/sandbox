@@ -1,4 +1,4 @@
-# Security Arch Analyst
+# IT Security Analyst
 
 ### What is OWASP
 The Open Web Application Security Project (OWASP) is a non-profit organization dedicated to providing unbiased, practical information about application security. 

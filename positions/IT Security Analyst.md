@@ -129,3 +129,53 @@ This would involve the ISO acting as an attacker and looking at the system as an
             Weakness of encryption
             Weakness of authentication
             Etc.
+#### Host Based
+This is an assessment of the health and security of given workstation or server.  Automated scanning tools (e.g. Nessus) are the primary vehicle for this type of assessment.  Additional hands-on inspection may also be necessary to assess conformance to security best practice. 
+ 
+This assessment will answer questions like:.
+
+            Is patching up to date?
+            Are unnecessary services running?
+            Are anti-virus/anti-malware signatures up to date?
+ 
+This would involve the ISO acting as a Sys Admin and auditing the system and applications looking for:
+
+            Locally exploitable vulnerabilities
+            Patch levels (OS and Apps)
+            Access rights
+            Security best practices
+            Etc.
+
+#### Application
+
+This is an assessment of the functionality and resilience of the compiled application to known threats.  This assessment focuses on the compiled and installed elements of the entire system: how the application components are deployed, communicate or otherwise interact with both the user and server environments. 
+ 
+Application scanning tools as well as manual testing with and without application credentials are used to perform this assessment. Typically some host, network, and general information security practices are assessed as part an application vulnerability assessment.
+ 
+This assessment will answer questions like:
+
+            Does the application expose the underlying servers and software to attack
+            Can a malicious user access, modify, or destroy data or services within the system
+ 
+This would involve the ISO auditing an application (typically web based) and looking for vulnerabilities like:
+
+            SQL Injection
+            Cross Site Scripting
+            Cross Site Request Forgery
+            Improper data sanitization
+            Buffer overflows (limited)
+            Mis-configured/weak authentication
+            Etc.
+ 
+####  Compliance
+
+This would involve the Information Security Office auditing (or assisting in the coordination of an audit if the ISO is not trained to conduct the specific audit) systems for compliance with specific regulations:
+
+            HIPAA
+            FERPA
+            GLBA
+            PCI
+
+#### 
+
+#### 

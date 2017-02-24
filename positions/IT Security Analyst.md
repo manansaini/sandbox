@@ -86,7 +86,7 @@ If someone exploits a vulnerability in one of the items in the preceding list or
 
       Obtain permission from partner networks to check for vulnerabilities on their systems that can affect your network’s security, such as open ports, lack of a firewall, or a misconfigured router.
 
-#### Top 10 vulnerabilities inside the network:
+#### Top 8 vulnerabilities inside the network:
 
 1. USB thumb drives:  Believe it or not, USB drives are actually one of, if not the most, common ways you can infect a network from inside a firewall.
 

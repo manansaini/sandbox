@@ -87,10 +87,12 @@ If someone exploits a vulnerability in one of the items in the preceding list or
       Obtain permission from partner networks to check for vulnerabilities on their systems that can affect your network’s security, such as open ports, lack of a firewall, or a misconfigured router.
 
 Top 10 vulnerabilities inside the network:
+
 1. USB thumb drives:  Believe it or not, USB drives are actually one of, if not the most, common ways you can infect a network from inside a firewall.
+
 2. Laptop and netbooks:  Laptops are discreet, portable, include full operating systems, can operate using an internal battery and come with a handy Ethernet port for tapping directly into a network.
     What to do: Implement an encrypted file system for sensitive data. There are a number of off-the-shelf solutions out there to choose from, along with open source ones such as TrueCrypt.
-    
+  
 3. Wireless access points: Wireless APs provide immediate connectivity to any user within proximity of the network. Wireless attacks by wardrivers (people in vehicles searching for unsecured Wi-Fi networks) are common and have caused significant damage in the past.
       What to do: WPA2 Enterprise using RADIUS is recommended along with an AP that is capable of performing authentication and enforcing security measures.
       

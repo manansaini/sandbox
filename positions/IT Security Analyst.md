@@ -39,9 +39,9 @@ At least 5 years in a an IT systems position
 
 #### Qualifications: 
 
-Strong analytical abilities
-Ability to identify issues and root causes and implement resolutions
-Ability to work under pressure with tight timelines
+* Strong analytical abilities
+* Ability to identify issues and root causes and implement resolutions
+* Ability to work under pressure with tight timelines
 
 
 ***********************************************************************************

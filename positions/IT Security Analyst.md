@@ -45,12 +45,12 @@ Ability to work under pressure with tight timelines
 
 ***********************************************************************************
 
-+++ Network log consolidatioN:  Splunk TOOL
+### Network log consolidatioN:  Splunk TOOL
 
 You can collect, store, index, search, correlate, visualize, analyze and report on any machine-generated data to identify and resolve operational and security issues. Turn searches into real-time alerts, reports or dashboards with a few mouse clicks.Index, search and correlate any data for complete insight across your infrastructure.Securely make operational data available without requiring access to production systems.
 
 
-+++ NETWORK INFRASTRUCTURE VULNERABILITIES:
+### NETWORK INFRASTRUCTURE VULNERABILITIES:
 
 When you assess your company’s network infrastructure security, you need to look at the following:
 
@@ -110,5 +110,5 @@ Top 10 vulnerabilities inside the network:
 8. E-mail
 
 
-+++ Security Assessment Services
+### Security Assessment Services
 

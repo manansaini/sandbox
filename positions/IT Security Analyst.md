@@ -20,11 +20,11 @@ Reporting to the IT Security Officer, provides assurance that the information as
 
 #### Key Responsibilities:
 
-Responsible for overall patch management which includes ensuring service and network infrastructure vulnerabilities are addressed, monitor patch levels and recommend plan and schedule for application of patches and updates
-Conduct pre-deployment assessments and regularly monitor device configurations
-Review network security monitoring system reports and alerts to identify and respond to security incidents/activities
-Configure, manage and maintain network log consolidation and analytics systems to ensure effectiveness of security monitoring and reporting
-Prepare regular security status reports 
+      Responsible for overall patch management which includes ensuring service and network infrastructure vulnerabilities are addressed, monitor patch levels and recommend plan and schedule for application of patches and updates
+      Conduct pre-deployment assessments and regularly monitor device configurations
+      Review network security monitoring system reports and alerts to identify and respond to security incidents/activities
+      Configure, manage and maintain network log consolidation and analytics systems to ensure effectiveness of security monitoring and reporting
+      Prepare regular security status reports 
 
 #### Qualifications:
 

@@ -115,12 +115,14 @@ Top 10 vulnerabilities inside the network:
  Network Based (Attack & Penetration):
  
 An attack and penetration test will answer questions like:
+
             How vulnerable is the network, host, and application(s) to attacks from the internet or intranet?
             Can an intruder obtain unauthorized access to critical resources?
             Are social engineering techniques effective?
             Are operational controls effective?
 
 This would involve the ISO acting as an attacker and looking at the system as an outsider.  The ISO would look for:
+
             Remotely exploitable vulnerabilities
             Patch levels (OS and Apps)
             Unnecessary services

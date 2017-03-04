@@ -179,6 +179,23 @@ This would involve the Information Security Office auditing (or assisting in the
             GLBA
             PCI
 
-#### 
+#### Why DNS traffic is important
+
+DNS has an important role in how end users in your enterprise connect to the internet. Each connection made to a domain by the client devices is recorded in the DNS logs. Inspecting DNS traffic between client devices and your local recursive resolver could reveal a wealth of information for forensic analysis.
+
+DNS queries can reveal:
+
+      Botnets/Malware connecting to C&C servers
+      What websites visited by an employee
+      Which malicious and DGA domains were accessed
+      Which dynamic domains (DynDNS) accessed
+      DDOS attack detection like NXDomain, phantom domain. random subdomain
+
+Identifying the threats using EventTracker
+
+While parsing each DNS log, we verify each domain accessed against:
+
+      Malicious domain database (updated on regular basis)
+      Domain Generation Algorithm (DGA)
 
 #### 

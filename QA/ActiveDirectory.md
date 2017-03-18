@@ -2,15 +2,18 @@
 
 ### What is Active Directory?
 An active directory is a directory structure used on Microsoft Windows based servers and computers to store data and information about networks and domains. It stores objects like User, Computer, printer, Network information, It facilitate to manage your network effectively with multiple Domain Controllers in different location with AD database, able to manage/change AD from any Domain Controllers and this will be replicated to all other DC.
-What is Active Directory Domain Controller (DC)?
+
+### What is Active Directory Domain Controller (DC)?
 Domain Controller is the server which holds the AD database, All AD changes get replicated to other DC and vise vase
 Mention what are the new features in Active Directory (AD) of Windows server 2012?
-•	dcpromo (Domain Controller Promoter) with improved wizard: It allows you to view all the steps and review the detailed results during the installation process
-•	Enhanced Administrative Center: Compared to the earlier version of active directory, the administrative center is well designed in Windows 2012. The exchange management console is well designed
-•	Recycle bin goes GUI: In windows server 12, there are now many ways to enable the active directory recycle bin through the GUI in the Active Directory Administrative Center, which was not possible with the earlier version
-•	Fine grained password policies (FGPP): In windows server 12 implementing FGPP is much easier compared to an earlier  It allows you to create different password policies in the same domain
-•	Windows Power Shell History Viewer: You can view the Windows PowerShell commands that relates to the actions you execute in the Active Directory Administrative Center UI
-Which is the default protocol used in directory services?
+
+       •	dcpromo (Domain Controller Promoter) with improved wizard: It allows you to view all the steps and review the detailed results during the installation process
+       •	Enhanced Administrative Center: Compared to the earlier version of active directory, the administrative center is well designed in Windows 2012. The exchange management console is well designed
+       •	Recycle bin goes GUI: In windows server 12, there are now many ways to enable the active directory recycle bin through the GUI in the Active Directory Administrative Center, which was not possible with the earlier version
+       •	Fine grained password policies (FGPP): In windows server 12 implementing FGPP is much easier compared to an earlier  It allows you to create different password policies in the same domain
+       •	Windows Power Shell History Viewer: You can view the Windows PowerShell commands that relates to the actions you execute in the Active Directory Administrative Center UI
+       
+### Which is the default protocol used in directory services?
 The default protocol used in directory services is LDAP (Lightweight Directory Access Protocol).
 Explain the term FOREST in AD?
 A forest is a complete instance of Active Directory. Each forest acts as a top-level container in that it houses all domain containers for that particular Active Directory instance. A forest can contain one or more domain container objects. Forest consists of multiple Domains trees. The Domain trees in a forest do not form a contiguous name space however share a common schema and global catalog (GC)

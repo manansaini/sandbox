@@ -1,5 +1,6 @@
-Active Directory Interview Questions & Answers
-What is Active Directory?
+## Active Directory Interview Questions & Answers
+
+### What is Active Directory?
 An active directory is a directory structure used on Microsoft Windows based servers and computers to store data and information about networks and domains. It stores objects like User, Computer, printer, Network information, It facilitate to manage your network effectively with multiple Domain Controllers in different location with AD database, able to manage/change AD from any Domain Controllers and this will be replicated to all other DC.
 What is Active Directory Domain Controller (DC)?
 Domain Controller is the server which holds the AD database, All AD changes get replicated to other DC and vise vase

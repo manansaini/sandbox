@@ -110,4 +110,90 @@ iptables can be used to block the port.
 
 chmod command is used to change the permission in Linux. In order to create read only file, file permission will be 0444, So command you can use:
 
-chmod 444 <file-name>
+chmod 444 < path to file/file name or directory >
+
+### Explain SUDO in detail. What are its disadvantages?
+Sudo stands for either "substitute user do" or "super user do". Using the su command to gain root privileges. You can even issue the command su - to effectively log in as the root (root's home becomes your home).  Now with sudo-based distributions you will most likely notice that you can not log in as a root user. All you can do is issue commands with the help of sudo to gain administrative privileges.
+Sudo (su "do") allows a system administrator to give certain users (or groups of users) the ability to run some (or all) commands as root while logging all commands and arguments.
+
+### What is the difference between UDP and TCP?
+Both of these protocols are used to send data over the Internet or a local network. These two protocols are used for different types of data. TCP and UDP aren’t the only protocols that work on top of IP. However, they are the most widely used. The widely used term “TCP/IP” refers to TCP over IP. UDP over IP could just as well be referred to as “UDP/IP”, although this isn’t a common term.
+
+e.g.: When you load a web page, your computer sends TCP packets to the web server’s address, asking it to send the web page to you.
+
+TCP stands for Transmission Control Protocol. TCP guarantees the recipient will receive the packets in order by numbering them. The recipient sends messages back to the sender saying it received the messages. If the sender doesn’t get a correct response, it will resend the packets to ensure the recipient received them. Packets are also checked for errors. TCP is all about this reliability. so no data is lost or corrupted in transit. 
+
+UDP stands for User Datagram Protocol. The UDP protocol works similarly to TCP, but it throws all the error-checking stuff out. All the back-and-forth communication and deliverability guarantees slow things down. The sender won’t wait to make sure the recipient received the packet — it will just continue sending the next packets. If you’re the recipient and you miss some UDP packets, too bad — you can’t ask for those packets again. There’s no guarantee you’re getting all the packets and there’s no way to ask for a packet again if you miss it, but losing all this overhead means the computers can communicate more quickly.
+
+UDP is used when speed is desirable and error correction isn’t necessary. For example, UDP is frequently used for live broadcasts and online games.
+
+### What are different levels of RAID and what level will you use for a web server and database server?
+
+RAID stands for Redundant Array of Inexpensive (Independent) Disks. RAID is traditionally implemented in businesses and organizations where disk fault tolerance and optimized performance are must-haves, not luxuries.
+
+popular RAID levels:
+
+        RAID 0
+        RAID 1
+        RAID 5
+        RAID 10 (also known as RAID 1+0)
+        
+#### RAID 0 : Blocks Stripped, No Mirror, No Parity
+
+        Minimum 2 disks.
+        Excellent performance ( as blocks are striped ).
+        No redundancy ( no mirror, no parity ).
+        Don’t use this for any critical system.
+
+
+#### RAID 1: Blocks Mirrored, No Stripe, No parity
+
+    Minimum 2 disks.
+    Good performance ( no striping. no parity ).
+    Excellent redundancy ( as blocks are mirrored ).
+
+#### RAID 5: Blocks Striped, Distributed parity
+    
+    Minimum 3 disks.
+    Good performance ( as blocks are striped ).
+    Good redundancy ( distributed parity ).
+    Best cost effective option providing both performance and redundancy. Use this for DB that is heavily read oriented. Write operations will be slow.
+
+#### RAID 10: Blocks Mirroed, Blocks Striped
+
+    Minimum 4 disks.
+    This is also called as “stripe of mirrors”
+    Excellent redundancy ( as blocks are mirrored )
+    Excellent performance ( as blocks are striped )
+    If you can afford the dollar, this is the BEST option for any mission critical applications (especially databases).
+
+
+### 
+
+### 
+
+
+### 
+
+
+### 
+
+### 
+
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+

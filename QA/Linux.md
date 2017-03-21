@@ -106,4 +106,8 @@ iptables can be used to block the port.
 
     /sbin/iptables -A OUTPUT -p tcp --dport {PORT-NUMBER-HERE} -j DROP
 
-### 
+### How do you change the permissions? How to create a file that’s read-only property?
+
+chmod command is used to change the permission in Linux. In order to create read only file, file permission will be 0444, So command you can use:
+
+chmod 444 <file-name>

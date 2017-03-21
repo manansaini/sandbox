@@ -159,6 +159,13 @@ popular RAID levels:
     Good redundancy ( distributed parity ).
     Best cost effective option providing both performance and redundancy. Use this for DB that is heavily read oriented. Write operations will be slow.
 
+
+#### RAID 6: Blocks Striped, Distributed DOUBLE parity
+     
+     Increased redundancy of Raid 5, Two disks can be failed.
+     Minimum 4 disks.
+
+
 #### RAID 10: Blocks Mirroed, Blocks Striped
 
     Minimum 4 disks.

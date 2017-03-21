@@ -205,8 +205,40 @@ From a command shell, use the “concatenate” command: cat /proc/meminfo for
 The preferred size for a swap partition is twice the amount of physical memory available on the system. If this is not possible, then the minimum size should be the same as the amount of memory installed.
 
 
+### What is the maximum length for a filename under Linux?
+
+Any filename can have a maximum of 255 characters. This limit does not include the path name, so therefore the entire pathname and filename could well exceed 255 characters.
+
+
+### What are filenames that are preceded by a dot?
+
+In general, filenames that are preceded by a dot are hidden files. These files can be configuration files that hold important data or setup info. Setting these files as hidden makes it less likely to be accidentally deleted.
+
+### What does a nameless directory represent in a Linux system?
+This empty directory name serves as the nameless base of the Linux file system. This serves as an attachment for all other directories, files, drives and devices.
+
+
 ### 
 
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
 
 ### 
 

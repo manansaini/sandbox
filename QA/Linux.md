@@ -4,7 +4,7 @@ Linux Interview Questions
 
 The following are the 6 high level stages of a typical Linux boot process:
 
-1. BIOS - BIOS stands for Basic Input/Output System
+#### 1. BIOS - BIOS stands for Basic Input/Output System
 
   Performs some system integrity checks.
   Searches, loads, and executes the boot loader program.
@@ -12,14 +12,14 @@ The following are the 6 high level stages of a typical Linux boot process:
   Once the boot loader program is detected and loaded into the memory, BIOS gives the control to it.
   So, in simple terms BIOS loads and executes the MBR boot loader.
 
-2. MBR - MBR stands for Master Boot Record.
+#### 2. MBR - MBR stands for Master Boot Record.
 
     It is located in the 1st sector of the bootable disk. Typically /dev/hda, or /dev/sda
     MBR is less than 512 bytes in size. This has three components 1) primary boot loader info in 1st 446 bytes 2) partition table info in next 64 bytes 3) mbr validation check in last 2 bytes.
     It contains information about GRUB (or LILO in old systems).
     So, in simple terms MBR loads and executes the GRUB boot loader.
 
-3. GRUB - GRUB stands for Grand Unified Bootloader.
+#### 3. GRUB - GRUB stands for Grand Unified Bootloader.
 
   If you have multiple kernel images installed on your system, you can choose which one to be executed.
   GRUB displays a splash screen, waits for few seconds, if you don’t enter anything, it loads the default kernel image as specified in the grub configuration file.
@@ -37,7 +37,7 @@ The following are the 6 high level stages of a typical Linux boot process:
       As you notice from the above info, it contains kernel and initrd image.
   So, in simple terms GRUB just loads and executes Kernel and initrd images.
 
-4. Kernel
+#### 4. Kernel
 
   Mounts the root file system as specified in the “root=” in grub.conf
   Kernel executes the /sbin/init program
@@ -45,7 +45,7 @@ The following are the 6 high level stages of a typical Linux boot process:
   initrd stands for Initial RAM Disk.
   initrd is used by kernel as temporary root file system until kernel is booted and the real root file system is mounted. It also contains necessary drivers compiled inside, which helps it to access the hard drive partitions, and other hardware.
   
-5. Init
+#### 5. Init
 
   Looks at the /etc/inittab file to decide the Linux run level.
   Following are the available run levels
@@ -61,7 +61,7 @@ The following are the 6 high level stages of a typical Linux boot process:
   If you want to get into trouble, you can set the default run level to 0 or 6. Since you know what 0 and 6 means, probably you might not do that.
   Typically you would set the default run level to either 3 or 5.
   
-6. Runlevel programs
+#### 6. Runlevel programs
 
   When the Linux system is booting up, you might see various services getting started. For example, it might say “starting sendmail …. OK”. Those are the runlevel programs, executed from the run level directory as defined by your run level.
   Depending on your default init level setting, the system will execute the programs from one of the following directories.

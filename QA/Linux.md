@@ -1,5 +1,26 @@
 Linux Interview Questions
 
+### What is BASH?
+
+BASH is short for Bourne Again SHell. It was written by Steve Bourne as a replacement to the original Bourne Shell (represented by /bin/sh). It combines all the features from the original version of Bourne Shell, plus additional functions to make it easier and more convenient to use. It has since been adapted as the default shell for most systems running Linux.
+
+### What is Linux Kernel?
+
+The Linux Kernel is a low-level systems software whose main role is to manage hardware resources for the user. It is also used to provide an interface for user-level interaction.
+
+### What is the basic difference between BASH and DOS?
+
+The key differences between the BASH and DOS console lies in 3 areas:
+
+    – BASH commands are case sensitive while DOS commands are not;
+    – under BASH, / character is a directory separator and acts as an escape character. Under DOS, / serves as a command argument delimiter and is the directory separator
+    – DOS follows a convention in naming files, which is 8 character file name followed by a dot and 3 character for the extension. BASH follows no such convention.
+
+### What is a swap space?
+
+A swap space is a certain amount of space used by Linux to temporarily hold some programs that are running concurrently. This happens when RAM does not have enough memory to hold all programs that are executing.
+
+
 ### Explain the boot process of Linux System in details?
 
 The following are the 6 high level stages of a typical Linux boot process:
@@ -175,9 +196,13 @@ popular RAID levels:
     If you can afford the dollar, this is the BEST option for any mission critical applications (especially databases).
 
 
-### 
+### How can you find out how much memory Linux is using?
 
-### 
+From a command shell, use the “concatenate” command: cat /proc/meminfo for 
+
+### What is typical size for a swap partition under a Linux system?
+
+The preferred size for a swap partition is twice the amount of physical memory available on the system. If this is not possible, then the minimum size should be the same as the amount of memory installed.
 
 
 ### 

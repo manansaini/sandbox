@@ -264,7 +264,13 @@ id:3:initdefault:
 
 This tells the init process that the default run level for the system is run level 3. To change to a different run level simply change the number and save the /etc/inittab file. Before doing this, however, be absolutely sure you know which run level you want. 
 
-### 
+### What is difference between Telnet and SSH?
+
+SSH is a network protocol used to remotely access and manage a device. The key difference between Telnet and SSH is that SSH uses encryption, which means that all data transmitted over a network is secure from eavesdropping. Like Telnet, a user accessing a remote device must have an SSH client installed.
+
+Telnet uses port 23 and SSH uses port 22
+
+
 
 ### 
 

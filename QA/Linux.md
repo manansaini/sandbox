@@ -243,8 +243,26 @@ When the process that created the zombies ends, init inherits the zombie process
 Zombie processes are when a parent starts a child process and the child process ends, but the parent doesn't pick up the child's exit code. The process object has to stay around until this happens - it consumes no resources and is dead, but it still exists - hence, 'zombie'.
 
 
+### How to change the default run level in a Linux system?
 
-### 
+During the boot process the init command opens the /etc/inittab file to decide what "runlevel" the system should be booted to. The /etc/inittab file is a plain text file that can be opened with text editor. The relavent section of a sample /etc/inittab file is as follows:
+
+    # Default runlevel. The runlevels used by RHS are:
+    #   0 - halt (Do NOT set initdefault to this)
+    #   1 - Single user mode
+    #   2 - Multiuser, without NFS (The same as 3, if you do not have networking)
+    #   3 - Full multiuser mode
+    #   4 - unused
+    #   5 - X11
+    #   6 - reboot (Do NOT set initdefault to this)
+    #
+    id:3:initdefault:
+
+The key line in the example above is:
+
+id:3:initdefault:
+
+This tells the init process that the default run level for the system is run level 3. To change to a different run level simply change the number and save the /etc/inittab file. Before doing this, however, be absolutely sure you know which run level you want. 
 
 ### 
 

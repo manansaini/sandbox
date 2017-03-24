@@ -218,13 +218,31 @@ In general, filenames that are preceded by a dot are hidden files. These files c
 This empty directory name serves as the nameless base of the Linux file system. This serves as an attachment for all other directories, files, drives and devices.
 
 
-### 
+### A UNIX fie system has been reported at 100% full. You log in and clear what appears to be the offending file. However, the file system still reports to be 100% full. What could cause this?
 
-### 
+The file that you cleared was still open by the calling application. The file handle was still in use and the file system was not recognizing that the space had been released.
 
-### 
 
-### 
+### How will you troubleshoot an issue like when the application is down or unreachable?
+
+Smoke test the application, then tail the webserver and application server logs. - Then investigate the issue based on the logs. - Find the root cause of why the application was down, what caused it. - Take steps to make sure this issue doesn't re-occur again.
+
+### User has lost root password, how do you reset?
+
+
+"init 1" doesn't always work, if you're not already root some systems will ask you for root password, and if you're not logged into the system ? What always works is to boot of a live CD, mount the file system with /etc, edit the /etc/passwd, /etc/shadow file.
+
+Another easy way to do this is to single the box in run-level 1 then use the standard passwd tools to update the hash. That's far simpler than using a live cd and editing the shadow file. 
+
+### What is a zombie process? State its causes?
+
+A zombie process or defunct process is a process that has completed execution (via the exit system call) but still has an entry in the process table: it is a process in the "Terminated state".
+
+When the process that created the zombies ends, init inherits the zombie processes and becomes their new parent. (init is the first process started on Linux at boot and is assigned PID 1.) init periodically executes the wait() system call to clean up its zombie children, so init will make short work of the zombies.
+
+Zombie processes are when a parent starts a child process and the child process ends, but the parent doesn't pick up the child's exit code. The process object has to stay around until this happens - it consumes no resources and is dead, but it still exists - hence, 'zombie'.
+
+
 
 ### 
 

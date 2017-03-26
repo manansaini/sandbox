@@ -5,7 +5,8 @@ An active directory is a directory structure used on Microsoft Windows based ser
 
 ### What is Active Directory Domain Controller (DC)?
 Domain Controller is the server which holds the AD database, All AD changes get replicated to other DC and vise vase
-Mention what are the new features in Active Directory (AD) of Windows server 2012?
+
+### Mention what are the new features in Active Directory (AD) of Windows server 2012?
 
        •	dcpromo (Domain Controller Promoter) with improved wizard: It allows you to view all the steps and review the detailed results during the installation process
        •	Enhanced Administrative Center: Compared to the earlier version of active directory, the administrative center is well designed in Windows 2012. The exchange management console is well designed

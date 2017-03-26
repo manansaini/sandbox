@@ -42,6 +42,7 @@ The SysVOL folder keeps the server’s copy of the domain’s public files.  The
        •	As such the group has full control in the domain, add users with caution
 ### Explain where does the AD database is held? What other folders are related to AD?
 AD database is saved in %systemroot%/ntds. In the same folder, you can also see other files; these are the main files controlling the AD structures they are
+
        •	dit
        •	log
        •	res 1.log
@@ -51,6 +52,7 @@ AD database is saved in %systemroot%/ntds. In the same folder, you can also see 
 Kerberos is an authentication protocol for network.  It is built to offer strong authentication for server/client applications by using secret-key cryptography.
 ### What system state data contains?
 System state data contains
+
        •	Contains startup files
        •	Registry
        •	Com + Registration Database
@@ -59,6 +61,7 @@ System state data contains
        •	AD information
        •	SYSVOL Folder
        •	Cluster service information
+       
 ### Tel me about the FSMO roles?
        •	Schema Master
        •	Domain Naming Master

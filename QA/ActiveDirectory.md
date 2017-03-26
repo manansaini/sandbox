@@ -108,10 +108,12 @@ The PDC emulator Primary Domain Controller for backwards compatibility and it’
 ### What is PDC emulator and how would one know whether PDC emulator is working or not?
 PDC Emulators: There is one PDC emulator per domain, and when there is a failed authentication attempt, it is forwarded to PDC emulator.  It acts as a “tie-breaker” and it controls the time sync across the domain.
 These are the parameters through which we can know whether PDC emulator is working or not.
-•	Time is not syncing
-•	User’s accounts are not locked out
-•	Windows NT BDCs are not getting updates
-•	If pre-windows 2000 computers are unable to change their passwords
+
+       •	Time is not syncing
+       •	User’s accounts are not locked out
+       •	Windows NT BDCs are not getting updates
+       •	If pre-windows 2000 computers are unable to change their passwords
+
 ### what are lingering objects?
 A lingering object is a deleted AD object that re-appears (“lingers”) on the restored domain controller (DC) in its local copy of Active Directory. Lingering objects can exists if a domain controller does not replicate for an interval of time that is longer than the tombstone lifetime (TSL). 
 ### what is TOMBSTONE lifetime?
@@ -125,6 +127,7 @@ CDC or child DC is a sub domain controller under root domain controller which sh
 RID master stands for Relative Identifier for assigning unique IDs to the object created in AD.
 ### What are the components of AD?
 Components of AD includes
+
        •	Logical Structure: Trees, Forest, Domains and OU
        •	Physical Structures: Domain controller and Sites
 
@@ -200,6 +203,7 @@ Here they are, it would do you well to familiarize yourself with all of them.
        Setspn.exe
 ### What is REPLMON? What is ADSIEDIT? What is NETDOM? What is REPADMIN?
 ADSIEdit is a Microsoft Management Console (MMC) snap-in that acts as a low-level editor for Active Directory. It is a Graphical User Interface (GUI) tool. Network administrators can use it for common administrative tasks such as adding, deleting, and moving objects with a directory service. The attributes for each object can be edited or deleted by using this tool. ADSIEdit uses the ADSI application programming interfaces (APIs) to access Active Directory. The following are the required files for using this tool:
+
        · ADSIEDIT.DLL
        · ADSIEDIT.MSC
        

@@ -11,7 +11,7 @@ cat show.sh
 #!/bin/bash
 cat $1
 
-2) How to use argument in a script ?
+### 2) How to use argument in a script ?
 
 First argument: $1,
 Second argument : $2
@@ -24,7 +24,7 @@ cat copy.sh
 #!/bin/bash
 cp $1 $2
 
-3) How to calculate number of passed arguments ?
+### 3) How to calculate number of passed arguments ?
 
 $#
 
@@ -32,27 +32,27 @@ $#
 
 $0
 
-5) How to check if previous command run successful ?
+### 5) How to check if previous command run successful ?
 
 $?
 
-6) How to get last line from a file ?
+### 6) How to get last line from a file ?
 
 tail -1
 
-7) How to get first line from a file ?
+### 7) How to get first line from a file ?
 
 head -1
 
-8) How to get 3rd element from each line from a file ?
+### 8) How to get 3rd element from each line from a file ?
 
 awk '{print $3}'
 
-9) How to get 2nd element from each line from a file, if first equal FIND
+### 9) How to get 2nd element from each line from a file, if first equal FIND
 
 awk '{ if ($1 == "FIND") print $2}'
 
-10)  How to debug bash script
+### 10)  How to debug bash script
 
 Add -xv to #!/bin/bash
 
@@ -60,13 +60,13 @@ Example
 
 #!/bin/bash –xv
 
-11) Give an example how to write function ?
+### 11) Give an example how to write function ?
 
 function example {
 echo "Hello world!"
 }
 
-12) How to add string to string ?
+### 12) How to add string to string ?
 
 V1="Hello"
 V2="World"
@@ -77,7 +77,7 @@ Output
 
 Hello+World
 
-13) How to add two integers ?
+### 13) How to add two integers ?
 
 V1=1
 V2=2
@@ -94,14 +94,14 @@ if without let , then it will be
 
 echo $V3 will give 1+2
 
-14) How to check if file exist on filesystem ?
+### 14) How to check if file exist on filesystem ?
 
 if [ -f /var/log/messages ]
 then
 echo "File exists"
 fi
 
-15) Write down syntax for all loops in shell scripting ?
+### 15) Write down syntax for all loops in shell scripting ?
 
 for loop :
 
@@ -127,69 +127,69 @@ echo COUNTER $COUNTER
 let COUNTER-=1
 done
 
-16) What it means by #!/bin/sh or #!/bin/bash at beginning of every script ?
+### 16) What it means by #!/bin/sh or #!/bin/bash at beginning of every script ?
 
 That line tells which shell to use. #!/bin/bash script to execute using /bin/bash. In case of python script there there will be #!/usr/bin/python
 
-17) How to get 10th line from the text file ?
+### 17) How to get 10th line from the text file ?
 
 head -10 file|tail -1
 
-18) What is the first symbol in the bash script file
+### 18) What is the first symbol in the bash script file
 
 #
 
-19) What would be the output of command: [ -z "" ] && echo 0 || echo 1
+### 19) What would be the output of command: [ -z "" ] && echo 0 || echo 1
 
 0
 
-20) What command "export" do ?
+### 20) What command "export" do ?
 
 Makes variable public in subshells
 
-21) How to run script in background ?
+### 21) How to run script in background ?
 
 add "&" to the end of script
 
-22) What "chmod 500 script" do ?
+### 22) What "chmod 500 script" do ?
 
 Makes script executable for script owner
 
-23) What ">" do ?
+### 23) What ">" do ?
 
 Redirects output stream to file or another stream.
 
-24) What difference between & and &&
+### 24) What difference between & and &&
 
 & - we using it when want to put script to background
 && - when we wand to execute command/script if first script was finished successfully
 
-25) When we need "if" before [ condition ] ?
+### 25) When we need "if" before [ condition ] ?
 
 When we need to run several commands if condition meets.
 
-26) What would be the output of the command: name=John && echo 'My name is $name'
+### 26) What would be the output of the command: name=John && echo 'My name is $name'
 
 My name is $name
 
-27) Which is the symbol used for comments in bash shell scripting ?
+### 27) Which is the symbol used for comments in bash shell scripting ?
 
 #
 
-28) What would be the output of command: echo ${new:-variable}
+### 28) What would be the output of command: echo ${new:-variable}
 
 variable
 
-29) What difference between ' and " quotes ?
+### 29) What difference between ' and " quotes ?
 
 ' - we use it when do not want to evaluate variables to the values
 " - all variables will be evaluated and its values will be assigned instead.
 
-30) How to redirect stdout and stderr streams to log.txt file from script inside ?
+### 30) How to redirect stdout and stderr streams to log.txt file from script inside ?
 
 Add "exec >log.txt 2>&1" as the first command in the script
 
-31) How to get part of string variable with echo command only ?
+### 31) How to get part of string variable with echo command only ?
 
 echo ${variable:x:y}
 x - start position
@@ -198,74 +198,75 @@ example:
 variable="My name is Petras, and I am developer."
 echo ${variable:11:6} # will display Petras
 
-32) How to get home_dir with echo command only if string variable="User:123:321:/home/dir" is given ?
+### 32) How to get home_dir with echo command only if string variable="User:123:321:/home/dir" is given ?
 
 echo ${variable#*:*:*:}
 or
 echo ${variable##*:}
 
-33) How to get “User” from the string above ?
+### 33) How to get “User” from the string above ?
 
 echo ${variable%:*:*:*}
 or
 echo ${variable%%:*}
 
-34) How to list users which UID less that 100 (awk) ?
+### 34) How to list users which UID less that 100 (awk) ?
 
-awk -F: '$3<100' /etc/passwd
+    awk -F: '$3<100' /etc/passwd
 
-35) Write the program which counts unique primary groups for users and displays count and group name only
+
+### 35) Write the program which counts unique primary groups for users and displays count and group name only
 
 cat /etc/passwd|cut -d: -f4|sort|uniq -c|while read c g
 do
 { echo $c; grep :$g: /etc/group|cut -d: -f1;}|xargs -n 2
 done
 
-36) How to change standard field separator to ":" in bash shell ?
+### 36) How to change standard field separator to ":" in bash shell ?
 
 IFS=":"
 
-37) How to get variable length ?
+### 37) How to get variable length ?
 
 ${#variable}
 
-38) How to print last 5 characters of variable ?
+### 38) How to print last 5 characters of variable ?
 
 echo ${variable: -5}
 
-39) What difference between ${variable:-10} and ${variable: -10} ?
+### 39) What difference between ${variable:-10} and ${variable: -10} ?
 
 ${variable:-10} - gives 10 if variable was not assigned before
 ${variable: -10} - gives last 10 symbols of variable
 
-40) How to substitute part of string with echo command only ?
+### 40) How to substitute part of string with echo command only ?
 
 echo ${variable//pattern/replacement}
 
-41) Which command replaces string to uppercase ?
+### 41) Which command replaces string to uppercase ?
 
 tr '[:lower:]' '[:upper:]'
 
-42) How to count local accounts ?
+### 42) How to count local accounts ?
 
 wc -l /etc/passwd|cut -d" " -f1
 or
 cat /etc/passwd|wc -l
 
-43) How to count words in a string without wc command ?
+### 43) How to count words in a string without wc command ?
 
 set ${string}
 echo $#
 
-44) Which one is correct "export $variable" or "export variable" ?
+### 44) Which one is correct "export $variable" or "export variable" ?
 
 export variable
 
-45) How to list files where second letter is a or b ?
+### 45) How to list files where second letter is a or b ?
 
 ls -d ?[ab]*
 
-46) How to add integers a to b and assign to c ?
+### 46) How to add integers a to b and assign to c ?
 
 c=$((a+b))
 or
@@ -273,103 +274,103 @@ c=`expr $a + $b`
 or
 c=`echo "$a+$b"|bc`
 
-47) How to remove all spaces from the string ?
+### 47) How to remove all spaces from the string ?
 
 echo $string|tr -d " "
 
-48) Rewrite the command to print the sentence and converting variable to plural: item="car"; echo "I like $item" ?
+### 48) Rewrite the command to print the sentence and converting variable to plural: item="car"; echo "I like $item" ?
 
 item="car"; echo "I like ${item}s"
 
-49) Write the command which will print numbers from 0 to 100 and display every third (0 3 6 9 …) ?
+### 49) Write the command which will print numbers from 0 to 100 and display every third (0 3 6 9 …) ?
 
 for i in {0..100..3}; do echo $i; done
 or
 for (( i=0; i<=100; i=i+3 )); do echo "Welcome $i times"; done
 
-50) How to print all arguments provided to the script ?
+### 50) How to print all arguments provided to the script ?
 
 echo $*
 or
 echo $@
 
-51) What difference between [ $a == $b ] and [ $a -eq $b ]
+### 51) What difference between [ $a == $b ] and [ $a -eq $b ]
 
 [ $a == $b ] - should be used for string comparison
 [ $a -eq $b ] - should be used for number tests
 
-52) What difference between = and ==
+### 52) What difference between = and ==
 
 = - we using to assign value to variable
 == - we using for string comparison
 
-53) Write the command to test if $a greater than 12 ?
+### 53) Write the command to test if $a greater than 12 ?
 
 [ $a -gt 12 ]
 
-54) Write the command to test if $b les or equal 12 ?
+### 54) Write the command to test if $b les or equal 12 ?
 
 [ $b -le 12 ]
 
-55) How to check if string begins with "abc" letters ?
+### 55) How to check if string begins with "abc" letters ?
 
 [[ $string == abc* ]]
 
-56) What difference between [[ $string == abc* ]] and [[ $string == "abc*" ]]
+### 56) What difference between [[ $string == abc* ]] and [[ $string == "abc*" ]]
 
 [[ $string == abc* ]] - will check if string begins with abc letters
 [[ $string == "abc*" ]] - will check if string is equal exactly to abc*
 
-57) How to list usernames which starts with ab or xy ?
+### 57) How to list usernames which starts with ab or xy ?
 
 egrep "^ab|^xy" /etc/passwd|cut -d: -f1
 
-58) What $! means in bash ?
+### 58) What $! means in bash ?
 
 Most recent background command PID
 
-59) What $? means ?
+### 59) What $? means ?
 
 Most recent foreground exit status.
 
-60) How to print PID of the current shell ?
+### 60) How to print PID of the current shell ?
 
 echo $$
 
-61) How to get number of passed arguments to the script ?
+### 61) How to get number of passed arguments to the script ?
 
 echo $#
 
-62) What difference between $* and $@
+### 62) What difference between $* and $@
 
 $* - gives all passed arguments to the script as a single string
 $@ - gives all passed arguments to the script as delimited list. Delimiter $IFS
 
-63) How to define array in bash ?
+### 63) How to define array in bash ?
 
 array=("Hi" "my" "name" "is")
 
-64) How to print the first array element ?
+### 64) How to print the first array element ?
 
 echo ${array[0]}
 
-65) How to print all array elements ?
+### 65) How to print all array elements ?
 
 echo ${array[@]}
 
-66) How to print all array indexes ?
+### 66) How to print all array indexes ?
 
 echo ${!array[@]}
 
-67) How to remove array element with id 2 ?
+### 67) How to remove array element with id 2 ?
 
 unset array[2]
 
-68) How to add new array element with id 333 ?
+### 68) How to add new array element with id 333 ?
 
 array[333]="New_element"
 
-69) How shell script get input values ?
+### 69) How shell script get input values ?
 
 a) via parameters
 
@@ -379,7 +380,7 @@ b) via read command
 
 read -p "Destination backup Server : " desthost
 
-70) How can we use "expect" command in a script ?
+### 70) How can we use "expect" command in a script ?
 
 /usr/bin/expect << EOD
 spawn rsync -ar ${line} ${desthost}:${destpath}

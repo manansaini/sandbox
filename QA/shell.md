@@ -137,11 +137,11 @@ head -10 file|tail -1
 
 ### 18) What is the first symbol in the bash script file
 
-#
+    #
 
 ### 19) What would be the output of command: [ -z "" ] && echo 0 || echo 1
 
-0
+    0
 
 ### 20) What command "export" do ?
 
@@ -174,7 +174,7 @@ My name is $name
 
 ### 27) Which is the symbol used for comments in bash shell scripting ?
 
-#
+    #
 
 ### 28) What would be the output of command: echo ${new:-variable}
 
@@ -264,7 +264,7 @@ export variable
 
 ### 45) How to list files where second letter is a or b ?
 
-ls -d ?[ab]*
+    ls -d ?[ab]*
 
 ### 46) How to add integers a to b and assign to c ?
 

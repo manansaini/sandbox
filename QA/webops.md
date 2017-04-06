@@ -1,6 +1,44 @@
 ### What is a reverse proxy? Why would it be useful?
 
+
+
+#### Forward proxy:
+A forward proxy is usually a client side concept used for anonymity, to subvert censorship, and as a web accelerator.
+
+A forward proxy provides proxy services to a client or a group of clients. When one of these clients makes a connection attempt to that file transfer server on the Internet, its requests have to pass through the forward proxy first. Depending on the forward proxy's settings, a request can be allowed or denied. If allowed, then the request is forwarded to the firewall and then to the server. From the point of view of the server, it is the proxy server that issued the request, not the client. So when the server responds, it addresses its response to the proxy.
+
+#### Forward Proxies are good for:
+
+    Content Filtering
+    eMail security
+    NAT’ing
+    Compliance Reporting
+
+#### Reverse Proxy:
+A reverse proxy is mostly a server-side concept, and is usually used in the context of CDNs (content distribution networks) for caching static HTTP content. 
+
+A reverse proxy accepts requests from external clients on behalf of servers stationed behind it. To the client in our example, it is the reverse proxy that is providing file transfer services. The client is oblivious to the file transfer servers behind the proxy, which are actually providing those services.
+
 In effect, whereas a forward proxy hides the identities of clients, a reverse proxy hides the identities of servers.
+
+#### Uses:
+
+Caching:
+
+    A server-side reverse proxy would be used in this context to cache static content, like images, CSS, and static HTML.
+
+Load Balancing: 
+
+    Reverse proxy servers also act as load balancers for the servers behind it. Load balancers play a crucial role in providing high availability to network services that receive large volumes of requests. When a reverse proxy performs load balancing, it distributes incoming requests to a cluster of servers, all providing the same kind of service.
+
+SSL Offload/Acceleration:
+
+    Another popular use of reverse proxies is for "transparent" HTTPS. Rather than load and setup every webserver with an SSL certificate, single a reverse proxy can sit in front of all the webservers, to encrypt and serve to clients over HTTPS. Usually, transparent HTTPS reverse proxy servers have dedicated hardware for SSL acceleration.
+
+Authentication
+
+Single Sign On
+
 
 ### Explain chroot, and why it would be useful in the context of a web server
 

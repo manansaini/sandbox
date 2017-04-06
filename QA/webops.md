@@ -1,34 +1,36 @@
-What is a reverse proxy? Why would it be useful?
+### What is a reverse proxy? Why would it be useful?
 
-Explain chroot, and why it would be useful in the context of a web server
+In effect, whereas a forward proxy hides the identities of clients, a reverse proxy hides the identities of servers.
 
-A static web page on one of your servers is not loading. Where would you look for more information?
+### Explain chroot, and why it would be useful in the context of a web server
 
-What would be the consequences of having two DHCP servers that don’t know about each other on the same subnet? What might the symptoms be?
+### A static web page on one of your servers is not loading. Where would you look for more information?
 
-How does traceroute work? What is TTL?
+### What would be the consequences of having two DHCP servers that don’t know about each other on the same subnet? What might the symptoms be?
 
-How many useable addresses are in a /25 subnet? /24? /30? What are some conceivable uses for a /30?
+### How does traceroute work? What is TTL?
 
-What are some IP address ranges that are not routable on the public internet?
+### How many useable addresses are in a /25 subnet? /24? /30? What are some conceivable uses for a /30?
 
-What tools would you use to capture network traffic? What about analysis of the packet capture?
+### What are some IP address ranges that are not routable on the public internet?
 
-Name some flags that can be set on TCP packets.
+### What tools would you use to capture network traffic? What about analysis of the packet capture?
 
-How would you display only lines containing at least one number from a bunch of text files? What about only lines without uppercase letters? Upper or lowercase letters? Lines that start with H and end with Q?
+### Name some flags that can be set on TCP packets.
 
-What text editor are you most comfortable with? Describe how you'd comment out everything from line 250 to the end of a ~500 line script
+### How would you display only lines containing at least one number from a bunch of text files? What about only lines without uppercase letters? Upper or lowercase letters? Lines that start with H and end with Q?
 
-What does the execute bit do on a directory?
+### What text editor are you most comfortable with? Describe how you'd comment out everything from line 250 to the end of a ~500 line script
 
-What does the setuid bit do? Setgid? Sticky?
+### What does the execute bit do on a directory?
 
-How would you locate all files under a particular directory that have been modified within the last three days?
+### What does the setuid bit do? Setgid? Sticky?
 
-What's the difference between moving a file between directories that are on the same filesystem and moving it between directories that are on two different filesystems? (Bonus: How does the mv command tell the difference?)
+### How would you locate all files under a particular directory that have been modified within the last three days?
 
-What are some different types of filesystem objects? (besides regular file?)
+### What's the difference between moving a file between directories that are on the same filesystem and moving it between directories that are on two different filesystems? (Bonus: How does the mv command tell the difference?)
 
-Network filesystems in /etc/fstab are not mounting on boot. Once the system is up, they can be mounted with no error. What could the problem be?
+### What are some different types of filesystem objects? (besides regular file?)
+
+### Network filesystems in /etc/fstab are not mounting on boot. Once the system is up, they can be mounted with no error. What could the problem be?
 

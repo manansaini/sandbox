@@ -79,10 +79,11 @@ If the destination is not found after traveling through too many routers in betw
 
 ### How many useable addresses are in a /25 subnet? /24? /30? What are some conceivable uses for a /30?
 
-Subnet Addresses	Hosts
-/30	4	2
-/25	128	126	
-/24	256	254
+    Subnet Addresses	Hosts
+    /30	4	2
+    /25	128	126	
+    /24	256	254
+
 
 Uses of /30 applies to a point to point network connection. For example completely applies to a point to point private network leased line (not on the Internet).
 

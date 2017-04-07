@@ -275,6 +275,7 @@ Telnet uses port 23 and SSH uses port 22
 ### What is the difference between df and du ?
 
 du                   (1)  - estimate file space usage
+
 df                   (1)  - report file system disk space usage
 
 du == Disk Usage. It walks through directory tree and counts the sum size of all files therein. It may not output exact information due to the possibility of unreadable files, hardlinks in directory tree, etc. It will show information about the specific directory requested. 

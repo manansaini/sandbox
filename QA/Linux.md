@@ -8,6 +8,8 @@ BASH is short for Bourne Again SHell. It was written by Steve Bourne as a replac
 
 The Linux Kernel is a low-level systems software whose main role is to manage hardware resources for the user. It is also used to provide an interface for user-level interaction.
 
+The kernel is the program that acts as a middle layer between software and hardware. When a program requires access to certain resources or processing power, the kernel is responsible for sending the correct signals to the CPU and managing all other running programs and services so that the resources are correctly allocated and no conflicts occur.
+
 ### What is the basic difference between BASH and DOS?
 
 The key differences between the BASH and DOS console lies in 3 areas:

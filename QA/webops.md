@@ -130,7 +130,7 @@ Alternatively, you could use it in conjunction with cat and tac (Reverse Cat)
     
 ### Lines that start with H and end with Q?
 
-grep '^a.*e$' file
+    grep '^a.*e$' file
 
 ### What text editor are you most comfortable with? Describe how you'd comment out everything from line 250 to the end of a ~500 line script
 

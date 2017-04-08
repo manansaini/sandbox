@@ -408,7 +408,20 @@ While parsing each DNS log, we verify each domain accessed against:
       Malicious domain database (updated on regular basis)
       Domain Generation Algorithm (DGA)
 
-#### 
+#### From an audit and compliance perspective, here’s a generalized list of how we map to standards (e.g. required by GDPR, HIPAA, NERC, FFIEC, FISMA, FERPA, PCI, SOX).
+
+    Identity, Audit and Authenticate Administrator and 3rd Party Access
+    Assign a Unique ID to each person and Authenticate access to systems
+    Control and Audit of all privileged users access 
+    Logging, monitoring user access
+    Track and Monitor all Access
+    Access Policy and reporting for Forensics and Investigations on incidents
+    Continuous Security Training Awareness with Recording Message
+    Remote Access Session Monitoring and Authentication to Servers
+    Logging Access, Alert on Unauthorized Access to Sensitive systems
+    Ports and Services Monitoring, Logging All Server and user activity
+    Incident Response with Session Replay on Event logs
+
 
 ### 
  

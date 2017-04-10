@@ -54,9 +54,10 @@ ISO 27001 uses a topdown, risk-based approach and is technology-neutral. The spe
     Prepare a statement of applicability.
 
 ### CoBIT
-COBIT  is a framework for developing, implementing, monitoring and improving information technology (IT) governance and management practices.The goal of the framework is to provide a common language for business executives to communicate with each other about goals, objectives and results.
 
 The name COBIT originally stood for "Control Objectives for Information and Related Technology," but the spelled-out version of the name was dropped in favor of the acronym in the fifth iteration of the framework.
+
+COBIT  is a framework for developing, implementing, monitoring and improving information technology (IT) governance and management practices.The goal of the framework is to provide a common language for business executives to communicate with each other about goals, objectives and results.
 
 COBIT 5 is based on five key principles for governance and management of enterprise IT:
 

@@ -61,11 +61,11 @@ COBIT  is a framework for developing, implementing, monitoring and improving inf
 
 COBIT 5 is based on five key principles for governance and management of enterprise IT:
 
-   Principle 1: Meeting Stakeholder Needs
-   Principle 2: Covering the Enterprise End-to-End
-   Principle 3: Applying a Single, Integrated Framework
-   Principle 4: Enabling a Holistic Approach
-   Principle 5: Separating Governance From Management
+     Principle 1: Meeting Stakeholder Needs
+     Principle 2: Covering the Enterprise End-to-End
+     Principle 3: Applying a Single, Integrated Framework
+     Principle 4: Enabling a Holistic Approach
+     Principle 5: Separating Governance From Management
     
 
 ### SAML

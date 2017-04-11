@@ -20,7 +20,16 @@ I am relocating to Edmonton, because my family is settled over there. I came to 
 
  
  
- ### 
+ ### Tell me about yourself ?
+ 
+ I graduated from dalhousie univ with my masters in Networking, Since then I am working with NTT data. I started working as system admin and progress to senior role and tech lead now. NTT data ....
+
+
+As a senior sys admin I look after the web operation of MS datacenters that includes but not limited to maintain and manage windows and linux servers (IIS, websphere, apache) along with application deployments, installations, configuration management, deco'ing the app when it reached to EOL that are hosted on virtualized infra, load balancers, firewalls, SSL certs, DNS, DB manangement and scripting. Along with that I work on troubleshooting incidents, outages calls, providing RCA and solution that needs to placed so that issues won't come up again and great customer service. I work with all management level staff and host meeting with other developers and eng. teams.
+
+Beign a tech lead I also help my team to maintain documentation and create policy and procedures along  with mentorship and train less experienced team members.
+
+Before NTT I worked on diff positions at Dalhousie univ as a lab asistant, website resource person and before that I worked as Sys N/w admin with Logic matters where I get to work on Cisco products, configure web and app servers, provide support for IT infrastrucre. 
  
  
  ### 

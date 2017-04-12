@@ -83,6 +83,15 @@ requests coming from a 172.0.0.0/18 subnet
 - e) implement a firewall to restrict network access (ports only)
 Firewall protection can be implemented either using Uncomplicated Firewall (UFW) or iptables. UFW is installed by default on Ubuntu to ease iptables firewall configuration, ufw provides a user-friendly way to create an IPv4 or IPv6 host-based firewall. The UFW is a frontend for iptables and is particularly well-suited for host-based firewalls.
 
+       Check the status of UFW:
+       $ sudo ufw status
+       $ sudo ufw status verbose
+       
+       Syntax:
+       sudo ufw allow <port>/<optional: protocol>
+       sudo ufw deny <port>/<optional: protocol>
+
+
        $ sudo ufw enable
        $ sudo ufw allow 22
        $ sudo ufw allow 80
@@ -105,4 +114,58 @@ Firewall protection can be implemented either using Uncomplicated Firewall (UFW)
        
        
        https://wiki.ubuntu.com/UncomplicatedFirewall
+
+
+#### 2. Install required packages
+ 
+Setup Mariadb 10+, PostgreSQL 9.4 and MongoDB. In Mariadb:
+
+1. Install Mariadb on ubuntu:
+       
+       http://www.tecmint.com/install-mariadb-in-ubuntu-and-debian/
+   
+
+ 
+- a) create a secure root user login
+
+       Follow as above
+       
+- b) create a user (do not create a super user), create a database owned by that user
+      
+      CREATE DATABASE maria-db-test;
+      
+      CREATE USER 'maria-user-test'@'localhost' IDENTIFIED BY 'maria-user-password';
+      CREATE USER 'maria-user-test'@'%' IDENTIFIED BY 'maria-user-password';
+      
+- c) allow remote access to the database created using the user above
+
+      $ vi /etc/my.cnf 
+      
+      comment below lines:
+      
+      #skip-networking
+      #bind-address = <some ip-address>
+      
+      save the file and restart mysql
+      
+      sudo service mysql restart
+      
+      
+      GRANT ALL PRIVILEGES ON maria-db-test.* TO 'maria-user-test'@'localhost';
+      GRANT ALL PRIVILEGES ON maria-db-test.* TO 'maria-user-test'@'%';
+      FLUSH PRIVILEGES;
+      
+      FYI:
+      If you want to give remote access to specific IP then need to create user with specific ip and grant privileges to same ip
+      
+      CREATE USER 'maria-user-test'@'192.168.100.33' IDENTIFIED BY 'maria-user-password';
+      GRANT ALL PRIVILEGES ON *.* TO 'maria-user-test'@'192.168.100.33';
+      
+      
+      https://rbgeek.wordpress.com/2014/09/23/enable-remote-access-of-mysql-on-ubuntu/
+      
+
+- d) enforce ssl connection for the user (optional)
+
+
 

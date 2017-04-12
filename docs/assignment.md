@@ -49,10 +49,32 @@ requests coming from a 172.0.0.0/18 subnet
       
        cd to the path /etc/ssh/sshd_config and updated the below changes:
        PermitRootLogin no
-
+       after making the changes restart the SSH using:
+       service ssh restart
 
 - b) disable ssh password based login
+
+        cd /etc/ssh/sshd_config
+        
+        #PasswordAuthentication yes
+        comment it and change it to NO
+
+        PasswordAuthentication no
+        
+        then restarted the ssh service
+       $ service ssh restart
+
 - c) create a user for yourself and include the user in the **sudo** group
+
+        $ adduser <username>
+        $ adduser <username> sudo
+        
+        another way to add into sudo group is:
+        $ (sudo) usermod -aG <groupname> <username>
+
+
+        
+        
 - d) ensure that all the packages installed below are locked to the version installed, however,
 security updates need to be installed on every run
 - e) implement a firewall to restrict network access (ports only)

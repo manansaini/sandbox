@@ -47,9 +47,8 @@ requests coming from a 172.0.0.0/18 subnet
  #### 1. Secure System
  - a) disable ssh login for root
       
-     Disable /etc/ssh/sshd_config:
-
-     PermitRootLogin no
+       cd to the path /etc/ssh/sshd_config and updated the below changes:
+       PermitRootLogin no
 
 
 - b) disable ssh password based login

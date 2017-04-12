@@ -1,6 +1,3 @@
-Disable /etc/ssh/sshd_config:
-
-PermitRootLogin no
 
 
 ### Tasks
@@ -12,8 +9,7 @@ SSH into the AWS server using the key provided for the user **ubuntu**. Initial 
 - a) disable ssh login for root
 - b) disable ssh password based login
 - c) create a user for yourself and include the user in the **sudo** group
-- d) ensure that all the packages installed below are locked to the version installed, however,
-security updates need to be installed on every run
+- d) ensure that all the packages installed below are locked to the version installed, however, security updates need to be installed on every run
 - e) implement a firewall to restrict network access (ports only)
  
 #### 2. Install required packages
@@ -46,3 +42,20 @@ to auto-renew the certificate
 - d) ensure that the https welcome page requires authentication to be visible to anyone, except those
 requests coming from a 172.0.0.0/18 subnet
  
+ ---------------------------------------------------------
+ 
+ #### 1. Secure System
+ - a) disable ssh login for root
+      
+     Disable /etc/ssh/sshd_config:
+
+     PermitRootLogin no
+
+
+- b) disable ssh password based login
+- c) create a user for yourself and include the user in the **sudo** group
+- d) ensure that all the packages installed below are locked to the version installed, however,
+security updates need to be installed on every run
+- e) implement a firewall to restrict network access (ports only)
+
+

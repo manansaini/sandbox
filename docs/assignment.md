@@ -159,7 +159,7 @@ Setup Mariadb 10+, PostgreSQL 9.4 and MongoDB. In Mariadb:
       If you want to give remote access to specific IP then need to create user with specific ip and grant privileges to same ip
       
       CREATE USER 'maria-user-test'@'192.168.100.33' IDENTIFIED BY 'maria-user-password';
-      GRANT ALL PRIVILEGES ON *.* TO 'maria-user-test'@'192.168.100.33';
+      GRANT ALL PRIVILEGES ON maria-db-test.* TO 'maria-user-test'@'192.168.100.33';
       
       
       https://rbgeek.wordpress.com/2014/09/23/enable-remote-access-of-mysql-on-ubuntu/
@@ -168,4 +168,7 @@ Setup Mariadb 10+, PostgreSQL 9.4 and MongoDB. In Mariadb:
 - d) enforce ssl connection for the user (optional)
 
 
+      GRANT USAGE ON maria-db-test.* TO 'maria-user-test'@'%' REQUIRE SSL;
+      
+      https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/
 

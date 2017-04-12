@@ -172,3 +172,25 @@ Setup Mariadb 10+, PostgreSQL 9.4 and MongoDB. In Mariadb:
       
       https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/
 
+
+Install: PostgreSQL 9.4
+
+    $ apt-get install postgresql-9.4
+    
+
+
+Install: MongoDB
+    
+    https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+    
+    
+    #### 3. System Monitoring
+ 
+Install M/Monit on the server and ensure:
+ 
+- a) all services created above are monitored
+- b) Monit service is started automatically on port 9812
+- c) secure Monit, to be visible only with credentials
+ 
+ 
+ 

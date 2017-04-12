@@ -192,5 +192,5 @@ Install M/Monit on the server and ensure:
 - b) Monit service is started automatically on port 9812
 - c) secure Monit, to be visible only with credentials
  
- 
+ https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-monit
  

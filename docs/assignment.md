@@ -48,35 +48,61 @@ requests coming from a 172.0.0.0/18 subnet
  - a) disable ssh login for root
       
        cd to the path /etc/ssh/sshd_config and updated the below changes:
-       PermitRootLogin no
+       $ PermitRootLogin no
        after making the changes restart the SSH using:
-       service ssh restart
+       $ (sudo) service ssh restart
 
 - b) disable ssh password based login
 
-        cd /etc/ssh/sshd_config
+        $ cd /etc/ssh/sshd_config
         
-        #PasswordAuthentication yes
+        $ #PasswordAuthentication yes
         comment it and change it to NO
 
-        PasswordAuthentication no
+        $ PasswordAuthentication no
         
         then restarted the ssh service
-       $ service ssh restart
+       $ (sudo) service ssh restart
 
 - c) create a user for yourself and include the user in the **sudo** group
 
+        Adding a new user:
         $ adduser <username>
+        
+        Adding user into sudo group:
         $ adduser <username> sudo
         
         another way to add into sudo group is:
         $ (sudo) usermod -aG <groupname> <username>
+          
+- d) ensure that all the packages installed below are locked to the version installed, however, security updates need to be installed on every run
 
+       sudo apt-mark hold package_name
+      
 
-        
-        
-- d) ensure that all the packages installed below are locked to the version installed, however,
-security updates need to be installed on every run
 - e) implement a firewall to restrict network access (ports only)
+Firewall protection can be implemented either using Uncomplicated Firewall (UFW) or iptables. UFW is installed by default on Ubuntu to ease iptables firewall configuration, ufw provides a user-friendly way to create an IPv4 or IPv6 host-based firewall. The UFW is a frontend for iptables and is particularly well-suited for host-based firewalls.
 
+       $ sudo ufw enable
+       $ sudo ufw allow 22
+       $ sudo ufw allow 80
+       $ sudo ufw allow 443
+       $ sudo ufw allow 21/tcp
+       
+       # For specific port ranges:
+       $ sudo ufw allow 3000:3007/tcp
+       $ sudo ufw allow 3000:3007/udp
+       
+       
+       or 
+       
+       Can also use the service name rather than port number:
+       $ sudo ufw enable
+       $ sudo ufw allow ssh
+       $ sudo ufw allow http
+       $ sudo ufw allow https
+       $ sudo ufw allow ftp
+       
+       
+       https://wiki.ubuntu.com/UncomplicatedFirewall
 

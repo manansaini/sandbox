@@ -35,8 +35,7 @@ Before NTT I worked on diff positions at Dalhousie univ as a lab asistant, websi
  ## BlackBerry
  
  ### Why should we hire you ?
- 
- 
+
 Not only I have required skill set and experience but I am very focused person, a team player who likes to overcome challenges and very passionate about customer support and assisting others.
  
  I am looking for a very long term career with Blackberry. I feel that this role and its requirement is totally inline with my expectations and interests that makes me a good match for this position.
@@ -50,7 +49,9 @@ I am strongly a team player.  I truely enjoy working in a team environment and I
 An example of this is my current team at NTT, where we are all working together with a variety of background and skills to produce a result which none of us could have achieved individually. So it's important that we all communicate well with each other on an ongoing basis. Some of this takes place in our weekly status meeting, where we get together to update on our progress toward the goal and any issues that we encounter. But I think the most important aspect is the ad hoc meetings that take place during the week between different team members. As being a tech lead I usually train other team members and come up with solutions that increases our efficiency towards work. I come up some solution to automate some of the work which my team starts using it and that leads to decrease the deployment time by almost 50% and not its been implemented as standard practice.  
  
  
- ### 
+ ### Why do you want to leave current job?
+ 
+I have been at NTT for almost four years now and have learned a lot from  amazing colleagues. I worked my way up to Senior Tech lead role. However, due to recent change in the clent requirement, the project that I am working on is going away to different vendor, So I believe this is a right time to look for another oppurtunity and more over I always wanted to work for BlackBerry and now I got the oppurtunity. 
  
  
  ### 

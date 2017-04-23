@@ -64,11 +64,17 @@ For storing same data at a different place RAID or Redundant Array of Independen
 
 **Ping:** To check the connection between the local computer and any of the other computer device on the network Ping command is used
 
-### 
+### Explain if it is possible to connect Active Directory to other 3rd party Directory services?
 
-### 
+Yes, you can connect other vendors directory services with Microsoft version.  By using dirXML or LDAP to connect to other directories.
 
-### 
+### Explain what is the major difference between NTFS ( New Technology File System) or FAT (File Allocation Table) on a local server?
+
+For local users FAT (File Allocation Table) and FAT32 provides security, while NTFS ( New Technology File System) provides security for domain users as well as local users.  NTFS provides file level security which is not possible through FAT32.
+
+### Mention what windows server 2008 service is used to install client operating system over the network?
+
+WDE ( Windows Deployment Services ) allows you to install client and server operating systems over the network to any computer with a PXE enabled network interface.
 
 ### 
 

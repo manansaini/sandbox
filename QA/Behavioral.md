@@ -32,10 +32,22 @@ Beign a tech lead I also help my team to maintain documentation and create polic
 Before NTT I worked on diff positions at Dalhousie univ as a lab asistant, website resource person and before that I worked as Sys N/w admin with Logic matters where I get to work on Cisco products, configure web and app servers, provide support for IT infrastrucre. 
  
  
- ### 
+ ## BlackBerry
+ 
+ ### Why should we hire you ?
  
  
- ### 
+Not only I have required skill set and experience but I am very focused person, a team player and very passionate about technology and customer support who likes to overcome challenges.
+ 
+ I am looking for a very long term career with Blackberry. I feel that this role and its requirement is totally inline with my expectations and interests that makes me a good match for this position.
+ 
+ At the same time, I have the experience to start contributing from day one and one thing I can definately promise you right now that you will never regret having me on your team, by saying that I am the only one in my current team who got exceeded expectation review in three consective years. My current manager is very much satisfied with my work and I am certain that I will bring the same level of high performance and excellence to this team.
+ 
+ ### Are you a team player ?
+ 
+I am strongly a team player.  I truely enjoy working in a team environment and I get along well with people. I am comfortable in both leadership and player roles. Collaborating with others helps to teach you more about yourself. Team always brings in various point-of-view and innovative solutions.
+ 
+An example of this is my current team at NTT, where we are all working together with a variety of background and skills to produce a result which none of us could have achieved individually. So it's important that we all communicate well with each other on an ongoing basis. Some of this takes place in our weekly status meeting, where we get together to update on our progress toward the goal and any issues that we encounter. But I think the most important aspect is the ad hoc meetings that take place during the week between different team members. As being a tech lead I usually train other team members and come up with solutions that increases our efficiency towards work. I come up some solution to automate some of the work which my team starts using it and that leads to decrease the deployment time by almost 50% and not its been implemented as standard practice.  
  
  
  ### 

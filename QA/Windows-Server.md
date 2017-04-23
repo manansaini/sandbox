@@ -13,7 +13,11 @@ In windows DNS server,
     
 3. **Stub Zone:** It consists of a copy of name server and SOA records which is used for reducing the DNS search orders.
 
-###
+### Explain how you can set up remote installation procedure without giving access to user?
+
+To do that, you have to go to,
+
+gponame >  User Configuration > Windows Settings > Remote Installation Services > Choice Options
 
 ###
 

@@ -37,7 +37,7 @@ Before NTT I worked on diff positions at Dalhousie univ as a lab asistant, websi
  ### Why should we hire you ?
  
  
-Not only I have required skill set and experience but I am very focused person, a team player and very passionate about technology and customer support who likes to overcome challenges.
+Not only I have required skill set and experience but I am very focused person, a team player who likes to overcome challenges and very passionate about customer support and assisting others.
  
  I am looking for a very long term career with Blackberry. I feel that this role and its requirement is totally inline with my expectations and interests that makes me a good match for this position.
  

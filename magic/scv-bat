@@ -1,0 +1,186 @@
+:begin
+@echo off
+::cls
+IF EXIST temp1.txt (del temp1.txt)
+IF EXIST temp2.txt (del temp2.txt)
+IF EXIST temp.txt (del temp.txt) 
+::IF EXIST pass.txt (del pass.txt) 
+::IF EXIST keys.txt (del keys.txt) 
+::IF EXIST uid.txt (del uid.txt) 
+echo.
+echo.
+echo. 	*************************************************
+echo.	*	Allows you to find and update passwords	*
+echo.	* 	for multiple Dot Net SCV Keys		*
+echo.	*						*	
+echo.	*		Written by Manan		*	
+echo.	*						*	
+echo.	*		  Version 1.2			*	
+echo.	*************************************************
+echo.
+echo. 	*************************************************
+echo. 	*  [1]  To find Dot Net SCV Key's Password	*
+echo.	*						*
+echo.	*  [2]  To update Dot Net SCV Key's Password	*
+echo. 	*************************************************
+echo.
+:optionprompt
+set "option=%~1"
+set /p option= Enter your option: 
+if "%option%"=="" goto optionprompt
+echo.
+:: Fetch environment  
+set "environment=%~2"
+:envprompt
+set /p "environment=Enter the Environment (dev/qa/uat/prod): "
+IF /I "%environment%"=="dev" ( goto envcheck 
+) else ( IF /I "%environment%"=="qa" ( goto envcheck
+) else ( IF /I "%environment%"=="uat" ( goto envcheck
+) else ( IF /I "%environment%"=="prod" ( goto envcheck
+) else ( echo %environment% is not correct input, Please chooose again:
+echo.
+goto envprompt
+ ) ) ) )
+:envcheck
+if "%environment%"=="" goto envprompt
+echo.
+:: Fetch SCV type  
+set "type=%~3"
+:typeprompt
+set /p "type=Enter the SCV type (Db/Gereric/Cert): "
+IF /I "%type%"=="Db" ( goto typecheck 
+) else ( IF /I "%type%"=="Generic" ( goto typecheck
+) else ( IF /I "%type%"=="Cert" ( goto typecheck
+) else ( echo %type% is not correct input, Please chooose again:
+echo.
+goto typeprompt
+ ) ) )
+:typecheck
+if "%type%"=="" goto typeprompt
+if %option% EQU 1 goto fetchpass
+if %option% EQU 2 goto updatepass
+echo.
+echo %option% is not the correct option, Please choose again: 
+echo.
+goto optionprompt
+:fetchpass
+del pass.txt
+echo.
+echo Press any key to create keys file, then add all the scv keynames in a format "proid-Db-logname" and press Ctrl + S to save it and close file.
+echo.
+Pause >nul
+start notepad "keys.txt"
+echo.
+echo Press any key again to fetch the passwords, for the keynames that you saved in file.
+pause >nul
+echo.
+for /F "tokens=1,2,3 delims=-" %%G in (keys.txt) do (@echo I am working on %%G-%%H-%%I for you, Sit Back and Relax...
+call makecredential.bat -clearpwd:true -type:%%H -proid:%%G -env:%environment% -logname:%%I >> pass.txt
+)
+echo.
+echo Passwords for your SCV Keys are:
+echo.
+findstr/v "MSWM Credentials Encoder" pass.txt > pass.txt.tmp
+findstr /v "^$"  pass.txt.tmp > pass.txt
+type pass.txt
+del pass.txt.tmp
+goto end
+
+:updatepass
+echo.
+echo Press any key to create keys file, after updating file press Ctrl + S to save them and close file.
+pause >nul
+start notepad "keys.txt"
+echo.
+echo Press any key to create UID or Certfile (in case of Cert keys) file, after updating file press Ctrl + S to save them and close file.
+pause >nul
+start notepad "uid.txt"
+echo.
+echo Press any key to create Password file, after updating file press Ctrl + S to save them and close file.
+pause >nul
+start notepad "pass.txt"
+echo.
+set /p proceed= If all details entered is correct please proceed, Do you want to proceed (y/n):
+echo.
+if /I %proceed% EQU y goto goahead
+goto end
+:goahead
+for /f %%m in ('Find /V /C "" ^< "keys.txt"') do set count1=%%m
+for /f %%m in ('Find /V /C "" ^< "pass.txt"') do set count2=%%m
+for /f %%m in ('Find /V /C "" ^< "uid.txt"') do set count3=%%m
+if %count1% == %count2% if %count2% == %count3%  goto checkpass 
+echo One of the check (KeyNames / Pass / UID / Certfile) is failed, Please verify the number of lines in your files.
+goto end
+:checkpass
+echo KeyNames / Pass / UID / Certfile  check passed, Generating commands to update passwords for SCV keys ...
+echo.
+for /F "tokens=1,2* delims=-" %%D in (keys.txt) do (
+echo %%D %%F
+)>> temp1.txt
+
+ set f1=temp1.txt
+ set f2=uid.txt
+ set sep= 
+ (
+   setlocal DisableDelayedExpansion
+   for /f "delims=" %%a in (%f1%) do (
+      set "f1_line=%%a"
+      setlocal EnableDelayedExpansion
+       set /p f2_line=
+       echo(!f1_line!!sep!!f2_line!
+      endlocal
+   )
+   endlocal
+ )<%f2%  > temp2.txt
+ set f3=temp2.txt
+ set f4=pass.txt
+ set sep= 
+ (
+   setlocal DisableDelayedExpansion
+   for /f "delims=" %%b in (%f3%) do (
+      set "f3_line=%%b"
+      setlocal EnableDelayedExpansion
+       set /p f4_line=
+       echo(!f3_line!!sep!!f4_line!
+      endlocal
+   )
+   endlocal
+ )<%f4%  > temp.txt
+::del temp1.txt
+::del temp2.txt
+if /I %type% NEQ cert goto notforcertkeys
+for /F "tokens=1,2,3,4" %%G in (temp.txt) do (
+echo makecredential.bat -type:%type% -proid:%%G -env:%environment% -logname:%%H -certfile:%%I -pwd:%%J
+)
+echo.
+echo Press any key to Execute these above commands:
+pause >nul
+echo.
+for /F "tokens=1,2,3,4" %%G in (temp.txt) do (
+
+call makecredential.bat -type:%type% -proid:%%G -env:%environment% -logname:%%H -certfile:%%I -pwd:%%J
+)
+
+goto end
+:notforcertkeys
+for /F "tokens=1,2,3,4" %%G in (temp.txt) do (
+echo makecredential.bat -type:%type% -proid:%%G -env:%environment% -logname:%%H -user:%%I -pwd:%%J
+)
+echo.
+echo Press any key to Execute these above commands:
+pause >nul
+echo.
+for /F "tokens=1,2,3,4" %%G in (temp.txt) do (
+
+call makecredential.bat -type:%type% -proid:%%G -env:%environment% -logname:%%H -user:%%I -pwd:%%J
+)
+
+::del temp.txt
+:end
+echo.
+echo.
+set /p input= Do you want to start again (y/n):
+echo.
+if /I %input% EQU y goto begin
+:quit
+echo.

@@ -1,0 +1,37 @@
+:begin
+@echo off
+cls
+echo.
+echo. 	*************************************************
+echo.	*	Allows you to open multiple PUTTY	*
+echo.	* 	windows , It may not work if you 	*
+echo.	*	 did not setup sessions in PUTTY 	*
+echo.	*						*	
+echo.	*		Written by Manan		*	
+echo.	*						*	
+echo.	*		  Version 1.0			*	
+echo.	*************************************************
+echo.
+echo.
+set number=""
+set env=""
+set input=""
+set /p number=Enter the number of PUTTY windows you want to open: 
+echo.
+set /p env=Please choose the environment or script type (prod/dev or acksn/scv):
+echo.
+if %env% EQU prod FOR /L %%G IN (1,1,%number%) DO call \\ms\dist\sec\PROJ\putty\prod\common\bin\putty.cmd -load "Script 1 - Prod"
+if %env% EQU dev FOR /L %%G IN (1,1,%number%) DO call \\ms\dist\sec\PROJ\putty\prod\common\bin\putty.cmd -load "Script 2 - Dev"
+if %env% EQU acksn FOR /L %%G IN (1,1,%number%) DO call \\ms\dist\sec\PROJ\putty\prod\common\bin\putty.cmd -load "Script 3 - acksn"
+if %env% EQU scv FOR /L %%G IN (1,1,%number%) DO start cmd.exe /k cd /d U:Desktop\SCV\script
+if %env% EQU "" goto begin
+pause
+echo.
+echo.
+set /p input= Do you want to start again (y/n):
+echo.
+if %input% EQU y goto begin
+if %input% EQU n goto end
+if %input% EQU "" goto begin
+:end
+echo.
